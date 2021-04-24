@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='About development of the PCB'><title>Notes about selecting components for BLDC driver</title>
+
+<link rel='canonical' href='https://example.com/p/bldc-components/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Notes about selecting components for BLDC driver'>
+<meta property='og:description' content='About development of the PCB'>
+<meta property='og:url' content='https://example.com/p/bldc-components/'>
+<meta property='og:site_name' content='Legged Robotics'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='electronics' /><meta property='article:tag' content='BLDC controller' /><meta property='article:published_time' content='2021-04-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-04-22T00:00:00&#43;00:00'/><meta property='og:image' content='https://example.com/p/bldc-components/pexels-guillaume-meurice-3757231.jpg' />
+<meta name="twitter:title" content="Notes about selecting components for BLDC driver">
+<meta name="twitter:description" content="About development of the PCB"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://example.com/p/bldc-components/pexels-guillaume-meurice-3757231.jpg' />
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+        <h1 class="site-name"><a href="https://example.com">Legged Robotics</a></h1>
+        <h2 class="site-description">All that we know about robotics</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://example.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/bldc-components/">
+                <img src="/p/bldc-components/pexels-guillaume-meurice-3757231_hu3d03a01dcc18bc5be0e67db3d8d209a6_141439_800x0_resize_q75_box.jpg"
+                        srcset="/p/bldc-components/pexels-guillaume-meurice-3757231_hu3d03a01dcc18bc5be0e67db3d8d209a6_141439_800x0_resize_q75_box.jpg 800w, /p/bldc-components/pexels-guillaume-meurice-3757231_hu3d03a01dcc18bc5be0e67db3d8d209a6_141439_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="999" 
+                        loading="lazy"
+                        alt="Featured image of post Notes about selecting components for BLDC driver" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/pcb/" style="background-color: #2a9d8f; color: #fff;">
+                PCB
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/bldc-components/">Notes about selecting components for BLDC driver</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        About development of the PCB
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Apr 22, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h1 id="stm32f446re-hardware-design-choices">STM32F446re hardware design choices</h1>
+<p>Example from Nucle64 Development board design from STM:<br>
+<figure style="flex-grow: 135; flex-basis: 325px">
+		<a href="/p/bldc-components/2021-04-12-22-03-27.png" data-size="657x485"><img src="/p/bldc-components/2021-04-12-22-03-27.png"
+				srcset="/p/bldc-components/2021-04-12-22-03-27_hude033286749c22e63623253123d8d726_196291_480x0_resize_box_2.png 480w, /p/bldc-components/2021-04-12-22-03-27_hude033286749c22e63623253123d8d726_196291_1024x0_resize_box_2.png 1024w"
+				width="657"
+				height="485"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<p>Another Example from STM32 series Evaluation board (Two capacitors for decoupling smaller C21 and the One which is selected with white outline):
+<figure style="flex-grow: 193; flex-basis: 465px">
+		<a href="/p/bldc-components/image4.png" data-size="952x491"><img src="/p/bldc-components/image4.png"
+				srcset="/p/bldc-components/image4_hu2c274c73946b539cfc859e57232fcc71_136412_480x0_resize_box_2.png 480w, /p/bldc-components/image4_hu2c274c73946b539cfc859e57232fcc71_136412_1024x0_resize_box_2.png 1024w"
+				width="952"
+				height="491"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure><br>
+In these schematics the closer is the bigger capacitor, however, that doesn&rsquo;t make much difference since both of them are not that close to the board. Recommendation is to place the smallest one as close as possible to the PCB as suggested by <a class="link" href="https://www.analog.com/media/en/training-seminars/tutorials/MT-101.pdf"  target="_blank" rel="noopener"
+    >Analog application note</a></p>
+<h2 id="chosing-murrata-oscillator">Chosing murrata oscillator</h2>
+<p>Typical circuit diagram is presented in <a class="link" href="https://www.murata.com/-/media/webrenewal/support/library/catalog/products/timingdevice/ceralock/p17e.ashx?la=en-gb&amp;cvid=20210217041637000000"  target="_blank" rel="noopener"
+    >CERALOCK Application Manual</a>:
+<figure style="flex-grow: 207; flex-basis: 497px">
+		<a href="/p/bldc-components/2021-03-17-11-46-42.png" data-size="864x417"><img src="/p/bldc-components/2021-03-17-11-46-42.png"
+				srcset="/p/bldc-components/2021-03-17-11-46-42_hue17cc4857d4ca8ea7e8d2ac38198c328_87876_480x0_resize_box_2.png 480w, /p/bldc-components/2021-03-17-11-46-42_hue17cc4857d4ca8ea7e8d2ac38198c328_87876_1024x0_resize_box_2.png 1024w"
+				width="864"
+				height="417"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<p>As stated, one can check <a class="link" href="http://www.murata.com/simsurf/ic-td/"  target="_blank" rel="noopener"
+    >Murrata ICs Database</a> for more precise details on applications. For example, for <code>STM32F446</code> the following is shown:</p>
+<p><figure style="flex-grow: 946; flex-basis: 2270px">
+		<a href="/p/bldc-components/2021-03-17-11-50-26.png" data-size="1353x143"><img src="/p/bldc-components/2021-03-17-11-50-26.png"
+				srcset="/p/bldc-components/2021-03-17-11-50-26_huacc4ddadc79aa548a803e3b80877427f_47901_480x0_resize_box_2.png 480w, /p/bldc-components/2021-03-17-11-50-26_huacc4ddadc79aa548a803e3b80877427f_47901_1024x0_resize_box_2.png 1024w"
+				width="1353"
+				height="143"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<p>However, based on the datasheet of <code>STM32F446</code> in section <code>High-speed external clock generated from a crystal/ceramic resonator</code> the required precision is <code>500ppm</code>, which means that the maximum deviation is 0.05%. The oscillator from previous design <code>CSTNE8M00GH5L000R0</code> has precision of <code>0.07%(max)</code> which doesnt satisfy requirements, but seams that STM is working alright with this one aswell.</p>
+<p><strong>Important notice</strong>: The pins of the oscillator in case of  <code>CSTNE8M00GH5L000R0</code> are not interchangable, which is stated in its datasheet.</p>
+<h2 id="emi-protection-for-power">EMI protection for power</h2>
+<p><a class="link" href="https://www.powersystemsdesign.com/articles/ferrite-bead-demystified/95/10031"  target="_blank" rel="noopener"
+    >Explanation about how Ferrite Bead work</a>
+Ferrit Bead is suggested in Application note <code>AN4488-Getting started with stm32f4</code> in Chapter <code>7. Reference Design</code> and taken characteristics for suggested one:</p>
+<p><figure style="flex-grow: 134; flex-basis: 323px">
+		<a href="/p/bldc-components/2021-04-08-17-57-54.png" data-size="513x381"><img src="/p/bldc-components/2021-04-08-17-57-54.png"
+				srcset="/p/bldc-components/2021-04-08-17-57-54_hu1a3500d2a9759c471bb7fd03374aa976_26728_480x0_resize_box_2.png 480w, /p/bldc-components/2021-04-08-17-57-54_hu1a3500d2a9759c471bb7fd03374aa976_26728_1024x0_resize_box_2.png 1024w"
+				width="513"
+				height="381"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<p>The one chosen in the design fits perfectly for this purpose.</p>
+<h2 id="capacitors-for-power">Capacitors for power</h2>
+<p>In STM32 datasheet in General PCB design guidelines it is suggested to use parallel capacitors between VSSA and VDDA.</p>
+<p><a class="link" href="https://electronics.stackexchange.com/questions/325881/how-to-read-stm32f407xx-microcontroller-power-schematic"  target="_blank" rel="noopener"
+    >How to read STM32 Microcontroller Power Schematic</a> can further clarfy application note about how to use capacitors.</p>
+<p>Double capacitor for VBAT pin is used (for other 3v3 pins only single 100nF capacitor is used):
+<figure style="flex-grow: 156; flex-basis: 375px">
+		<a href="/p/bldc-components/2021-03-17-18-02-24.png" data-size="935x597"><img src="/p/bldc-components/2021-03-17-18-02-24.png"
+				srcset="/p/bldc-components/2021-03-17-18-02-24_huacb160c51577ff2f878d6da7044db033_30901_480x0_resize_box_2.png 480w, /p/bldc-components/2021-03-17-18-02-24_huacb160c51577ff2f878d6da7044db033_30901_1024x0_resize_box_2.png 1024w"
+				width="935"
+				height="597"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<p>Capacitors for VDDs are suggested as 100nF from Power supply scheme in Datasheet.</p>
+<h3 id="capacitors-insights">Capacitors insights</h3>
+<p>Suggested value is just 100nF instead of 2 parallel with different values because of the anti-resonance effect. Check <a class="link" href="https://electronics.stackexchange.com/questions/327975/capacitance-vs-frequency-graph-of-ceramic-capacitors"  target="_blank" rel="noopener"
+    >Capacitors vs frequency, ringing, ESL, ESR</a></p>
+<h4 id="insigts-about-the-esl-and-esr-of-capacitors-from-lecturehttpntuemctwuploadfile20120419205619a4fcfpdf">Insigts about the ESL and ESR of Capacitors from <a class="link" href="http://ntuemc.tw/upload/file/20120419205619a4fcf.pdf"  target="_blank" rel="noopener"
+    >Lecture</a></h4>
+<p>Higher capacitance -&gt; Higher ESL (depends largly from packaging - same package -&gt; same Inductance). Additional: Thats why when having parallel capacitors of different values the advantage if smaller value is that its available in smaller package, meaning with smaller ESL.  <a class="link" href="https://electronics.stackexchange.com/questions/327975/capacitance-vs-frequency-graph-of-ceramic-capacitors"  target="_blank" rel="noopener"
+    >Source</a>
+Higher capacitance -&gt; Lower ESR (It depends from technology, the best one is <code>NFO</code>, and next best is <code>X7R</code>)</p>
+<p><figure style="flex-grow: 151; flex-basis: 364px">
+		<a href="/p/bldc-components/2021-04-08-21-23-33.png" data-size="814x536"><img src="/p/bldc-components/2021-04-08-21-23-33.png"
+				srcset="/p/bldc-components/2021-04-08-21-23-33_hu9f8960925d515615e0b6c11a4c6fa9e8_214962_480x0_resize_box_2.png 480w, /p/bldc-components/2021-04-08-21-23-33_hu9f8960925d515615e0b6c11a4c6fa9e8_214962_1024x0_resize_box_2.png 1024w"
+				width="814"
+				height="536"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<p>ESL of the capacitance depends on:</p>
+<ul>
+<li>Pad layout (the biggest amoung all, can be reduced by proper pad design and via placement)</li>
+<li>Capacitor height</li>
+<li>Power plance spreading inductance</li>
+</ul>
+<p>Pad layout design and via placing:
+<figure style="flex-grow: 218; flex-basis: 524px">
+		<a href="/p/bldc-components/2021-04-08-21-22-15.png" data-size="653x299"><img src="/p/bldc-components/2021-04-08-21-22-15.png"
+				srcset="/p/bldc-components/2021-04-08-21-22-15_hu5618fa6ecafb382ca10731a1d5f1b4f3_38051_480x0_resize_box_2.png 480w, /p/bldc-components/2021-04-08-21-22-15_hu5618fa6ecafb382ca10731a1d5f1b4f3_38051_1024x0_resize_box_2.png 1024w"
+				width="653"
+				height="299"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<p>Plane separation influence:
+<figure style="flex-grow: 161; flex-basis: 388px">
+		<a href="/p/bldc-components/2021-04-08-21-25-57.png" data-size="727x449"><img src="/p/bldc-components/2021-04-08-21-25-57.png"
+				srcset="/p/bldc-components/2021-04-08-21-25-57_hu90275ac7be2690c31d7f84932559f583_76529_480x0_resize_box_2.png 480w, /p/bldc-components/2021-04-08-21-25-57_hu90275ac7be2690c31d7f84932559f583_76529_1024x0_resize_box_2.png 1024w"
+				width="727"
+				height="449"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<h4 id="same-value-capacitors">Same value capacitors</h4>
+<p>Same value capacitance will reduce overall impedance:
+<figure style="flex-grow: 156; flex-basis: 374px">
+		<a href="/p/bldc-components/2021-04-08-21-26-25.png" data-size="807x517"><img src="/p/bldc-components/2021-04-08-21-26-25.png"
+				srcset="/p/bldc-components/2021-04-08-21-26-25_hu76601de596c8ee16070c8270533164f6_146735_480x0_resize_box_2.png 480w, /p/bldc-components/2021-04-08-21-26-25_hu76601de596c8ee16070c8270533164f6_146735_1024x0_resize_box_2.png 1024w"
+				width="807"
+				height="517"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<h4 id="anti-resonance-for-different-values-capacitors">Anti-resonance for different values capacitors</h4>
+<p>Problem (especially when large gaps exist in capacitive values)
+<figure style="flex-grow: 175; flex-basis: 420px">
+		<a href="/p/bldc-components/2021-04-08-21-27-09.png" data-size="812x463"><img src="/p/bldc-components/2021-04-08-21-27-09.png"
+				srcset="/p/bldc-components/2021-04-08-21-27-09_hubfa451bdba385d8307c2a2e8141c037f_133319_480x0_resize_box_2.png 480w, /p/bldc-components/2021-04-08-21-27-09_hubfa451bdba385d8307c2a2e8141c037f_133319_1024x0_resize_box_2.png 1024w"
+				width="812"
+				height="463"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure>
+Solution is to minimise the ESL
+<figure style="flex-grow: 176; flex-basis: 423px">
+		<a href="/p/bldc-components/2021-04-08-21-27-31.png" data-size="772x438"><img src="/p/bldc-components/2021-04-08-21-27-31.png"
+				srcset="/p/bldc-components/2021-04-08-21-27-31_hu8f055342ba5e0141a65036cc98887edf_116978_480x0_resize_box_2.png 480w, /p/bldc-components/2021-04-08-21-27-31_hu8f055342ba5e0141a65036cc98887edf_116978_1024x0_resize_box_2.png 1024w"
+				width="772"
+				height="438"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<h4 id="capacitors-value-can-vary-as-mentioned-herehttpselectronicsstackexchangecoma288899221561">Capacitors value can vary as mentioned <a class="link" href="https://electronics.stackexchange.com/a/288899/221561"  target="_blank" rel="noopener"
+    >here</a></h4>
+<p>With temeparture and time, capacitor values can change up to 40% of its rated voltage.</p>
+<p>Thumb up rule would be to use on max the half of their rated voltage, also the value of capacitor can be increased up to 2 times, since for regulator decopling, the value is often important for stability.</p>
+<h2 id="vcap_1-external-capacitor">VCAP_1 external capacitor</h2>
+<p>In STM32 datasheet it is suggested to use 4.7uF when single VCAP pin is present.</p>
+<h2 id="can-interface">CAN interface</h2>
+<p>Pins PB8 and PB9 are used for CAN1. Pins PB7 and PB6 not clear
+<figure style="flex-grow: 126; flex-basis: 304px">
+		<a href="/p/bldc-components/2021-03-17-17-57-41.png" data-size="995x785"><img src="/p/bldc-components/2021-03-17-17-57-41.png"
+				srcset="/p/bldc-components/2021-03-17-17-57-41_hu3c026282ee08596acbe4ce8121c72052_124129_480x0_resize_box_2.png 480w, /p/bldc-components/2021-03-17-17-57-41_hu3c026282ee08596acbe4ce8121c72052_124129_1024x0_resize_box_2.png 1024w"
+				width="995"
+				height="785"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<h2 id="debug">Debug</h2>
+<p>2 debug pins are provided PA13 and PA14 which are used for SW debug (support for JTAG not provided)</p>
+<h2 id="other-notes">Other notes</h2>
+<p>General guideliness and for example schematic check <code>Getting started with STM32F4xxxx MCU hardware development AN4488</code></p>
+<h1 id="can-interface-1">CAN interface</h1>
+<p>As presented on example in <code>1.8Typical Applications</code> in <code>U$6-MCP2542</code> Datasheet</p>
+<h1 id="33-v-linear-generator">3.3 V linear generator</h1>
+<p><strong>MC1</strong> according to suggestion from <code>LDFM33PUR datasheet</code>
+<strong>C19</strong> and <strong>C20</strong> (both 22 uF) not according to Stable ESR zone, in <code>LDFM33PUR datasheet</code> stated max value 22uF in <code>Figure 26: Stability plane 3.3 V (COUT, ESR)</code>. However, due to the constant bias voltage acting on capacitors (3.3V) the capacitance will be reduced by more then 50%; yealding in total for two capacitors a bit less then 22uF under 3.3V and 25 Degrees Celsius. For more precise estimation of the capacitance refer to  <a class="link" href="http://product.samsungsem.com/mlcc/basic-search.do"  target="_blank" rel="noopener"
+    >Samsung Product Database</a>, or <a class="link" href="https://ds.murata.co.jp/simsurfing/index.html?lcid=en-us"  target="_blank" rel="noopener"
+    >Murrata Product Database SimuSurfing</a></p>
+<h1 id="switch">Switch</h1>
+<p><a class="link" href="https://www.digikey.de/product-detail/de/e-switch/TL3305AF160QG/EG5350TR-ND/5816181"  target="_blank" rel="noopener"
+    >Suggestion for the button switch</a>
+<a class="link" href="https://www.digikey.de/product-detail/de/e-switch/TL3302AF180QG/EG2528DKR-ND/745644"  target="_blank" rel="noopener"
+    >Top switch</a>
+<a class="link" href="https://www.digikey.de/product-detail/de/TL1014BF160QG/EG5042CT-ND/3910808/?itemSeq=360831777"  target="_blank" rel="noopener"
+    >Side switch</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/electronics/">electronics</a>
+        
+            <a href="/tags/bldc-controller/">BLDC controller</a>
+        
+    </section>
+
+
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/all-about-mosfets/">
+        
+        
+            <div class="article-image">
+                <img src="/p/all-about-mosfets/_hu3d03a01dcc18bc5be0e67db3d8d209a6_117902_170f3c63e5fc208712c5193d60769940.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="all-about-mosfets" 
+                        data-hash="md5-U9Gh0N8sq5IxfoHcjXjtDg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">All about mosfets</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/handling-driver/">
+        
+        
+            <div class="article-image">
+                <img src="/p/handling-driver/_hu3d03a01dcc18bc5be0e67db3d8d209a6_471037_3e28a82d3bb555c9f0123ea065abd338.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="handling-driver" 
+                        data-hash="md5-bFdDCBY3kRejACdywoYzVQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Handling Driver</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/pcb-design-tips/">
+        
+        
+            <div class="article-image">
+                <img src="/p/pcb-design-tips/_hu3d03a01dcc18bc5be0e67db3d8d209a6_303835_f7d3f6ae486c6867908e1d3ebcaca39c.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="pcb-design-tips" 
+                        data-hash="md5-0STvELEEMIQZocsV3F10Ew==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">PCB design tips</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Legged Robotics
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

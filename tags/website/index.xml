@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>website on Legged Robotics</title>
+    <link>https://example.com/tags/website/</link>
+    <description>Recent content in website on Legged Robotics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating Markdown Websites</title>
+      <link>https://example.com/p/creating-markdown-sites/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/creating-markdown-sites/</guid>
+      <description>How to effortlessly create a website for free with GitHub Pages (even if you don’t know what you’re doing)
+Build a Blog With GitHub and MkDocs
+How to create a documentation site with Docsify and GitHub Pages
+He said that he used some template in the post about moving to github Example of a nice page
+Modify the docsify-themeable</description>
+    </item>
+    
+  </channel>
+</rss>

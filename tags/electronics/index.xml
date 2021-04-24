@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>electronics on Legged Robotics</title>
+    <link>https://example.com/tags/electronics/</link>
+    <description>Recent content in electronics on Legged Robotics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes about selecting components for BLDC driver</title>
+      <link>https://example.com/p/bldc-components/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/bldc-components/</guid>
+      <description>STM32F446re hardware design choices Example from Nucle64 Development board design from STM:
+ 
+Another Example from STM32 series Evaluation board (Two capacitors for decoupling smaller C21 and the One which is selected with white outline):  
+In these schematics the closer is the bigger capacitor, however, that doesn&amp;rsquo;t make much difference since both of them are not that close to the board. Recommendation is to place the smallest one as close as possible to the PCB as suggested by Analog application note</description>
+    </item>
+    
+  </channel>
+</rss>
