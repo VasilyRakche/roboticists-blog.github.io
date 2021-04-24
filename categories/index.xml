@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Legged Robotics</title>
-    <link>https://example.com/categories/</link>
+    <link>https://vasilyrakche.github.io/categories/</link>
     <description>Recent content in Categories on Legged Robotics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vasilyrakche.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PCB</title>
-      <link>https://example.com/categories/pcb/</link>
+      <link>https://vasilyrakche.github.io/categories/pcb/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/pcb/</guid>
+      <guid>https://vasilyrakche.github.io/categories/pcb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Website</title>
-      <link>https://example.com/categories/website/</link>
+      <link>https://vasilyrakche.github.io/categories/website/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/website/</guid>
+      <guid>https://vasilyrakche.github.io/categories/website/</guid>
       <description></description>
     </item>
     

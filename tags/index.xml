@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Legged Robotics</title>
-    <link>https://example.com/tags/</link>
+    <link>https://vasilyrakche.github.io/tags/</link>
     <description>Recent content in Tags on Legged Robotics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vasilyrakche.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BLDC controller</title>
-      <link>https://example.com/tags/bldc-controller/</link>
+      <link>https://vasilyrakche.github.io/tags/bldc-controller/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/bldc-controller/</guid>
+      <guid>https://vasilyrakche.github.io/tags/bldc-controller/</guid>
       <description></description>
     </item>
     
     <item>
       <title>electronics</title>
-      <link>https://example.com/tags/electronics/</link>
+      <link>https://vasilyrakche.github.io/tags/electronics/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/electronics/</guid>
+      <guid>https://vasilyrakche.github.io/tags/electronics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://example.com/tags/markdown/</link>
+      <link>https://vasilyrakche.github.io/tags/markdown/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/markdown/</guid>
+      <guid>https://vasilyrakche.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>website</title>
-      <link>https://example.com/tags/website/</link>
+      <link>https://vasilyrakche.github.io/tags/website/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/website/</guid>
+      <guid>https://vasilyrakche.github.io/tags/website/</guid>
       <description></description>
     </item>
     

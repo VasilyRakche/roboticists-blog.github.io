@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Legged Robotics</title>
-        <link>https://example.com/</link>
+        <link>https://vasilyrakche.github.io/</link>
         <description>Recent content on Legged Robotics</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vasilyrakche.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>All about mosfets</title>
-        <link>https://example.com/p/all-about-mosfets/</link>
+        <link>https://vasilyrakche.github.io/p/all-about-mosfets/</link>
         <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/p/all-about-mosfets/</guid>
-        <description>&lt;img src="https://example.com/p/all-about-mosfets/pexels-binyamin-mellish-17840.jpg" alt="Featured image of post All about mosfets" /&gt;&lt;h2 id=&#34;slew-rate-control&#34;&gt;Slew-rate Control&lt;/h2&gt;
+        <guid>https://vasilyrakche.github.io/p/all-about-mosfets/</guid>
+        <description>&lt;img src="https://vasilyrakche.github.io/p/all-about-mosfets/pexels-binyamin-mellish-17840.jpg" alt="Featured image of post All about mosfets" /&gt;&lt;h2 id=&#34;slew-rate-control&#34;&gt;Slew-rate Control&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://training.ti.com/smart-motor-gate-drive-series-mosfet-slew-rate-control&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;From texas instruments&lt;/a&gt;
 &lt;figure style=&#34;flex-grow: 189; flex-basis: 455px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/all-about-mosfets/2021-03-20-15-55-29.png&#34; data-size=&#34;1736x915&#34;&gt;&lt;img src=&#34;https://example.com/p/all-about-mosfets/2021-03-20-15-55-29.png&#34;
-				srcset=&#34;https://example.com/p/all-about-mosfets/2021-03-20-15-55-29_huff5ebd95b2e241557f314e7a52665080_480348_480x0_resize_box_2.png 480w, https://example.com/p/all-about-mosfets/2021-03-20-15-55-29_huff5ebd95b2e241557f314e7a52665080_480348_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/all-about-mosfets/2021-03-20-15-55-29.png&#34; data-size=&#34;1736x915&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/all-about-mosfets/2021-03-20-15-55-29.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/all-about-mosfets/2021-03-20-15-55-29_huff5ebd95b2e241557f314e7a52665080_480348_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/all-about-mosfets/2021-03-20-15-55-29_huff5ebd95b2e241557f314e7a52665080_480348_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1736&#34;
 				height=&#34;915&#34;
 				loading=&#34;lazy&#34;
@@ -27,8 +27,8 @@
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Slew-rate means the slope of the VDS for the mosfet
 &lt;figure style=&#34;flex-grow: 192; flex-basis: 462px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/all-about-mosfets/2021-03-20-16-00-40.png&#34; data-size=&#34;1791x930&#34;&gt;&lt;img src=&#34;https://example.com/p/all-about-mosfets/2021-03-20-16-00-40.png&#34;
-				srcset=&#34;https://example.com/p/all-about-mosfets/2021-03-20-16-00-40_hu5391a6be01958208c036cb350ad1c59b_467796_480x0_resize_box_2.png 480w, https://example.com/p/all-about-mosfets/2021-03-20-16-00-40_hu5391a6be01958208c036cb350ad1c59b_467796_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/all-about-mosfets/2021-03-20-16-00-40.png&#34; data-size=&#34;1791x930&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/all-about-mosfets/2021-03-20-16-00-40.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/all-about-mosfets/2021-03-20-16-00-40_hu5391a6be01958208c036cb350ad1c59b_467796_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/all-about-mosfets/2021-03-20-16-00-40_hu5391a6be01958208c036cb350ad1c59b_467796_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1791&#34;
 				height=&#34;930&#34;
 				loading=&#34;lazy&#34;
@@ -53,8 +53,8 @@ If calculated with 0.6 max current and 40% K_id and max voltage 24V, the inducto
 Output capacitance is likely ok, only minimum value can be calculated, but the datasheet sugests to experiment with values up to &lt;strong&gt;100uF&lt;/strong&gt; as stated in &lt;code&gt;9.2.2.3 Output Capacitor Selection&lt;/code&gt;
 Regarding input capacitance. If 10uF is chosen (suggested is value between 1uF and 10uF). Then the ripple current calculated is 0.25A and the input voltage deviation is 21mV. Capacitor ripple current must be greater then calculated. Based on the datasheet for 10uF capacitor from original design, the only concern is rise of the temperature when working in AC conditions, and based on the Temperature-Arms graph 0.25A is well inside the safe limit for this capacitor.
 &lt;figure style=&#34;flex-grow: 108; flex-basis: 260px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/all-about-mosfets/2021-04-15-15-49-44.png&#34; data-size=&#34;389x358&#34;&gt;&lt;img src=&#34;https://example.com/p/all-about-mosfets/2021-04-15-15-49-44.png&#34;
-				srcset=&#34;https://example.com/p/all-about-mosfets/2021-04-15-15-49-44_hu6d7a9a71cef406e67ebc77bfc1f26024_27990_480x0_resize_box_2.png 480w, https://example.com/p/all-about-mosfets/2021-04-15-15-49-44_hu6d7a9a71cef406e67ebc77bfc1f26024_27990_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/all-about-mosfets/2021-04-15-15-49-44.png&#34; data-size=&#34;389x358&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/all-about-mosfets/2021-04-15-15-49-44.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/all-about-mosfets/2021-04-15-15-49-44_hu6d7a9a71cef406e67ebc77bfc1f26024_27990_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/all-about-mosfets/2021-04-15-15-49-44_hu6d7a9a71cef406e67ebc77bfc1f26024_27990_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;389&#34;
 				height=&#34;358&#34;
 				loading=&#34;lazy&#34;
@@ -70,11 +70,11 @@ Regarding input capacitance. If 10uF is chosen (suggested is value between 1uF a
         </item>
         <item>
         <title>Creating Markdown Websites</title>
-        <link>https://example.com/p/creating-markdown-sites/</link>
+        <link>https://vasilyrakche.github.io/p/creating-markdown-sites/</link>
         <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/p/creating-markdown-sites/</guid>
-        <description>&lt;img src="https://example.com/p/creating-markdown-sites/pexels-reafon.jpg" alt="Featured image of post Creating Markdown Websites" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://vasilyrakche.github.io/p/creating-markdown-sites/</guid>
+        <description>&lt;img src="https://vasilyrakche.github.io/p/creating-markdown-sites/pexels-reafon.jpg" alt="Featured image of post Creating Markdown Websites" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;How to effortlessly create a website for free with GitHub Pages (even if you don’t know what you’re doing)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://betterprogramming.pub/build-a-blog-with-github-and-mkdocs-cf47914affa7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Build a Blog With GitHub and MkDocs&lt;/a&gt;&lt;/p&gt;
@@ -89,11 +89,11 @@ Regarding input capacitance. If 10uF is chosen (suggested is value between 1uF a
         </item>
         <item>
         <title>Handling Driver</title>
-        <link>https://example.com/p/handling-driver/</link>
+        <link>https://vasilyrakche.github.io/p/handling-driver/</link>
         <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/p/handling-driver/</guid>
-        <description>&lt;img src="https://example.com/p/handling-driver/pexels-matheus-bertelli-4558403.jpg" alt="Featured image of post Handling Driver" /&gt;&lt;h2 id=&#34;cautions&#34;&gt;Cautions&lt;/h2&gt;
+        <guid>https://vasilyrakche.github.io/p/handling-driver/</guid>
+        <description>&lt;img src="https://vasilyrakche.github.io/p/handling-driver/pexels-matheus-bertelli-4558403.jpg" alt="Featured image of post Handling Driver" /&gt;&lt;h2 id=&#34;cautions&#34;&gt;Cautions&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Power supply must be able to sink-in current, if cant must design &lt;a class=&#34;link&#34; href=&#34;https://www.pololu.com/category/249/shunt-regulators&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Shunt Regulators&lt;/a&gt;&lt;/li&gt;
@@ -113,15 +113,15 @@ Regarding input capacitance. If 10uF is chosen (suggested is value between 1uF a
         </item>
         <item>
         <title>Notes about selecting components for BLDC driver</title>
-        <link>https://example.com/p/bldc-components/</link>
+        <link>https://vasilyrakche.github.io/p/bldc-components/</link>
         <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/p/bldc-components/</guid>
-        <description>&lt;img src="https://example.com/p/bldc-components/pexels-guillaume-meurice-3757231.jpg" alt="Featured image of post Notes about selecting components for BLDC driver" /&gt;&lt;h1 id=&#34;stm32f446re-hardware-design-choices&#34;&gt;STM32F446re hardware design choices&lt;/h1&gt;
+        <guid>https://vasilyrakche.github.io/p/bldc-components/</guid>
+        <description>&lt;img src="https://vasilyrakche.github.io/p/bldc-components/pexels-guillaume-meurice-3757231.jpg" alt="Featured image of post Notes about selecting components for BLDC driver" /&gt;&lt;h1 id=&#34;stm32f446re-hardware-design-choices&#34;&gt;STM32F446re hardware design choices&lt;/h1&gt;
 &lt;p&gt;Example from Nucle64 Development board design from STM:&lt;br&gt;
 &lt;figure style=&#34;flex-grow: 135; flex-basis: 325px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-04-12-22-03-27.png&#34; data-size=&#34;657x485&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-04-12-22-03-27.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-04-12-22-03-27_hude033286749c22e63623253123d8d726_196291_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-04-12-22-03-27_hude033286749c22e63623253123d8d726_196291_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-12-22-03-27.png&#34; data-size=&#34;657x485&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-12-22-03-27.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-12-22-03-27_hude033286749c22e63623253123d8d726_196291_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-04-12-22-03-27_hude033286749c22e63623253123d8d726_196291_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;657&#34;
 				height=&#34;485&#34;
 				loading=&#34;lazy&#34;
@@ -131,8 +131,8 @@ Regarding input capacitance. If 10uF is chosen (suggested is value between 1uF a
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Another Example from STM32 series Evaluation board (Two capacitors for decoupling smaller C21 and the One which is selected with white outline):
 &lt;figure style=&#34;flex-grow: 193; flex-basis: 465px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/image4.png&#34; data-size=&#34;952x491&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/image4.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/image4_hu2c274c73946b539cfc859e57232fcc71_136412_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/image4_hu2c274c73946b539cfc859e57232fcc71_136412_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/image4.png&#34; data-size=&#34;952x491&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/image4.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/image4_hu2c274c73946b539cfc859e57232fcc71_136412_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/image4_hu2c274c73946b539cfc859e57232fcc71_136412_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;952&#34;
 				height=&#34;491&#34;
 				loading=&#34;lazy&#34;
@@ -146,8 +146,8 @@ In these schematics the closer is the bigger capacitor, however, that doesn&amp;
 &lt;p&gt;Typical circuit diagram is presented in &lt;a class=&#34;link&#34; href=&#34;https://www.murata.com/-/media/webrenewal/support/library/catalog/products/timingdevice/ceralock/p17e.ashx?la=en-gb&amp;amp;cvid=20210217041637000000&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CERALOCK Application Manual&lt;/a&gt;:
 &lt;figure style=&#34;flex-grow: 207; flex-basis: 497px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-03-17-11-46-42.png&#34; data-size=&#34;864x417&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-03-17-11-46-42.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-03-17-11-46-42_hue17cc4857d4ca8ea7e8d2ac38198c328_87876_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-03-17-11-46-42_hue17cc4857d4ca8ea7e8d2ac38198c328_87876_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-11-46-42.png&#34; data-size=&#34;864x417&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-11-46-42.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-11-46-42_hue17cc4857d4ca8ea7e8d2ac38198c328_87876_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-03-17-11-46-42_hue17cc4857d4ca8ea7e8d2ac38198c328_87876_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;864&#34;
 				height=&#34;417&#34;
 				loading=&#34;lazy&#34;
@@ -158,8 +158,8 @@ In these schematics the closer is the bigger capacitor, however, that doesn&amp;
 &lt;p&gt;As stated, one can check &lt;a class=&#34;link&#34; href=&#34;http://www.murata.com/simsurf/ic-td/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Murrata ICs Database&lt;/a&gt; for more precise details on applications. For example, for &lt;code&gt;STM32F446&lt;/code&gt; the following is shown:&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 946; flex-basis: 2270px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-03-17-11-50-26.png&#34; data-size=&#34;1353x143&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-03-17-11-50-26.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-03-17-11-50-26_huacc4ddadc79aa548a803e3b80877427f_47901_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-03-17-11-50-26_huacc4ddadc79aa548a803e3b80877427f_47901_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-11-50-26.png&#34; data-size=&#34;1353x143&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-11-50-26.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-11-50-26_huacc4ddadc79aa548a803e3b80877427f_47901_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-03-17-11-50-26_huacc4ddadc79aa548a803e3b80877427f_47901_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1353&#34;
 				height=&#34;143&#34;
 				loading=&#34;lazy&#34;
@@ -174,8 +174,8 @@ In these schematics the closer is the bigger capacitor, however, that doesn&amp;
     &gt;Explanation about how Ferrite Bead work&lt;/a&gt;
 Ferrit Bead is suggested in Application note &lt;code&gt;AN4488-Getting started with stm32f4&lt;/code&gt; in Chapter &lt;code&gt;7. Reference Design&lt;/code&gt; and taken characteristics for suggested one:&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 134; flex-basis: 323px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-04-08-17-57-54.png&#34; data-size=&#34;513x381&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-04-08-17-57-54.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-04-08-17-57-54_hu1a3500d2a9759c471bb7fd03374aa976_26728_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-04-08-17-57-54_hu1a3500d2a9759c471bb7fd03374aa976_26728_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-17-57-54.png&#34; data-size=&#34;513x381&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-17-57-54.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-17-57-54_hu1a3500d2a9759c471bb7fd03374aa976_26728_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-04-08-17-57-54_hu1a3500d2a9759c471bb7fd03374aa976_26728_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;513&#34;
 				height=&#34;381&#34;
 				loading=&#34;lazy&#34;
@@ -190,8 +190,8 @@ Ferrit Bead is suggested in Application note &lt;code&gt;AN4488-Getting started 
     &gt;How to read STM32 Microcontroller Power Schematic&lt;/a&gt; can further clarfy application note about how to use capacitors.&lt;/p&gt;
 &lt;p&gt;Double capacitor for VBAT pin is used (for other 3v3 pins only single 100nF capacitor is used):
 &lt;figure style=&#34;flex-grow: 156; flex-basis: 375px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-03-17-18-02-24.png&#34; data-size=&#34;935x597&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-03-17-18-02-24.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-03-17-18-02-24_huacb160c51577ff2f878d6da7044db033_30901_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-03-17-18-02-24_huacb160c51577ff2f878d6da7044db033_30901_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-18-02-24.png&#34; data-size=&#34;935x597&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-18-02-24.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-18-02-24_huacb160c51577ff2f878d6da7044db033_30901_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-03-17-18-02-24_huacb160c51577ff2f878d6da7044db033_30901_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;935&#34;
 				height=&#34;597&#34;
 				loading=&#34;lazy&#34;
@@ -209,8 +209,8 @@ Ferrit Bead is suggested in Application note &lt;code&gt;AN4488-Getting started 
     &gt;Source&lt;/a&gt;
 Higher capacitance -&amp;gt; Lower ESR (It depends from technology, the best one is &lt;code&gt;NFO&lt;/code&gt;, and next best is &lt;code&gt;X7R&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 151; flex-basis: 364px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-04-08-21-23-33.png&#34; data-size=&#34;814x536&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-04-08-21-23-33.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-04-08-21-23-33_hu9f8960925d515615e0b6c11a4c6fa9e8_214962_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-04-08-21-23-33_hu9f8960925d515615e0b6c11a4c6fa9e8_214962_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-23-33.png&#34; data-size=&#34;814x536&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-23-33.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-23-33_hu9f8960925d515615e0b6c11a4c6fa9e8_214962_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-23-33_hu9f8960925d515615e0b6c11a4c6fa9e8_214962_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;814&#34;
 				height=&#34;536&#34;
 				loading=&#34;lazy&#34;
@@ -226,8 +226,8 @@ Higher capacitance -&amp;gt; Lower ESR (It depends from technology, the best one
 &lt;/ul&gt;
 &lt;p&gt;Pad layout design and via placing:
 &lt;figure style=&#34;flex-grow: 218; flex-basis: 524px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-04-08-21-22-15.png&#34; data-size=&#34;653x299&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-04-08-21-22-15.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-04-08-21-22-15_hu5618fa6ecafb382ca10731a1d5f1b4f3_38051_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-04-08-21-22-15_hu5618fa6ecafb382ca10731a1d5f1b4f3_38051_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-22-15.png&#34; data-size=&#34;653x299&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-22-15.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-22-15_hu5618fa6ecafb382ca10731a1d5f1b4f3_38051_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-22-15_hu5618fa6ecafb382ca10731a1d5f1b4f3_38051_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;653&#34;
 				height=&#34;299&#34;
 				loading=&#34;lazy&#34;
@@ -237,8 +237,8 @@ Higher capacitance -&amp;gt; Lower ESR (It depends from technology, the best one
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Plane separation influence:
 &lt;figure style=&#34;flex-grow: 161; flex-basis: 388px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-04-08-21-25-57.png&#34; data-size=&#34;727x449&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-04-08-21-25-57.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-04-08-21-25-57_hu90275ac7be2690c31d7f84932559f583_76529_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-04-08-21-25-57_hu90275ac7be2690c31d7f84932559f583_76529_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-25-57.png&#34; data-size=&#34;727x449&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-25-57.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-25-57_hu90275ac7be2690c31d7f84932559f583_76529_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-25-57_hu90275ac7be2690c31d7f84932559f583_76529_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;727&#34;
 				height=&#34;449&#34;
 				loading=&#34;lazy&#34;
@@ -249,8 +249,8 @@ Higher capacitance -&amp;gt; Lower ESR (It depends from technology, the best one
 &lt;h4 id=&#34;same-value-capacitors&#34;&gt;Same value capacitors&lt;/h4&gt;
 &lt;p&gt;Same value capacitance will reduce overall impedance:
 &lt;figure style=&#34;flex-grow: 156; flex-basis: 374px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-04-08-21-26-25.png&#34; data-size=&#34;807x517&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-04-08-21-26-25.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-04-08-21-26-25_hu76601de596c8ee16070c8270533164f6_146735_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-04-08-21-26-25_hu76601de596c8ee16070c8270533164f6_146735_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-26-25.png&#34; data-size=&#34;807x517&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-26-25.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-26-25_hu76601de596c8ee16070c8270533164f6_146735_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-26-25_hu76601de596c8ee16070c8270533164f6_146735_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;807&#34;
 				height=&#34;517&#34;
 				loading=&#34;lazy&#34;
@@ -261,8 +261,8 @@ Higher capacitance -&amp;gt; Lower ESR (It depends from technology, the best one
 &lt;h4 id=&#34;anti-resonance-for-different-values-capacitors&#34;&gt;Anti-resonance for different values capacitors&lt;/h4&gt;
 &lt;p&gt;Problem (especially when large gaps exist in capacitive values)
 &lt;figure style=&#34;flex-grow: 175; flex-basis: 420px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-04-08-21-27-09.png&#34; data-size=&#34;812x463&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-04-08-21-27-09.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-04-08-21-27-09_hubfa451bdba385d8307c2a2e8141c037f_133319_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-04-08-21-27-09_hubfa451bdba385d8307c2a2e8141c037f_133319_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-27-09.png&#34; data-size=&#34;812x463&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-27-09.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-27-09_hubfa451bdba385d8307c2a2e8141c037f_133319_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-27-09_hubfa451bdba385d8307c2a2e8141c037f_133319_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;812&#34;
 				height=&#34;463&#34;
 				loading=&#34;lazy&#34;
@@ -272,8 +272,8 @@ Higher capacitance -&amp;gt; Lower ESR (It depends from technology, the best one
 	&lt;/figure&gt;
 Solution is to minimise the ESL
 &lt;figure style=&#34;flex-grow: 176; flex-basis: 423px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-04-08-21-27-31.png&#34; data-size=&#34;772x438&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-04-08-21-27-31.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-04-08-21-27-31_hu8f055342ba5e0141a65036cc98887edf_116978_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-04-08-21-27-31_hu8f055342ba5e0141a65036cc98887edf_116978_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-27-31.png&#34; data-size=&#34;772x438&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-27-31.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-27-31_hu8f055342ba5e0141a65036cc98887edf_116978_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-04-08-21-27-31_hu8f055342ba5e0141a65036cc98887edf_116978_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;772&#34;
 				height=&#34;438&#34;
 				loading=&#34;lazy&#34;
@@ -290,8 +290,8 @@ Solution is to minimise the ESL
 &lt;h2 id=&#34;can-interface&#34;&gt;CAN interface&lt;/h2&gt;
 &lt;p&gt;Pins PB8 and PB9 are used for CAN1. Pins PB7 and PB6 not clear
 &lt;figure style=&#34;flex-grow: 126; flex-basis: 304px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/bldc-components/2021-03-17-17-57-41.png&#34; data-size=&#34;995x785&#34;&gt;&lt;img src=&#34;https://example.com/p/bldc-components/2021-03-17-17-57-41.png&#34;
-				srcset=&#34;https://example.com/p/bldc-components/2021-03-17-17-57-41_hu3c026282ee08596acbe4ce8121c72052_124129_480x0_resize_box_2.png 480w, https://example.com/p/bldc-components/2021-03-17-17-57-41_hu3c026282ee08596acbe4ce8121c72052_124129_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-17-57-41.png&#34; data-size=&#34;995x785&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-17-57-41.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/bldc-components/2021-03-17-17-57-41_hu3c026282ee08596acbe4ce8121c72052_124129_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/bldc-components/2021-03-17-17-57-41_hu3c026282ee08596acbe4ce8121c72052_124129_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;995&#34;
 				height=&#34;785&#34;
 				loading=&#34;lazy&#34;
@@ -321,11 +321,11 @@ Solution is to minimise the ESL
         </item>
         <item>
         <title>PCB design tips</title>
-        <link>https://example.com/p/pcb-design-tips/</link>
+        <link>https://vasilyrakche.github.io/p/pcb-design-tips/</link>
         <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/p/pcb-design-tips/</guid>
-        <description>&lt;img src="https://example.com/p/pcb-design-tips/pexels-cottonbro-5554180.jpg" alt="Featured image of post PCB design tips" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.ti.com/lit/an/slpa005/slpa005.pdf?ts=1617219980194&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://vasilyrakche.github.io/p/pcb-design-tips/</guid>
+        <description>&lt;img src="https://vasilyrakche.github.io/p/pcb-design-tips/pexels-cottonbro-5554180.jpg" alt="Featured image of post PCB design tips" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.ti.com/lit/an/slpa005/slpa005.pdf?ts=1617219980194&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Suggestions on placing the MOSFETs to prevent ringing&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;http://electronicsbeliever.com/ltspice-circuit-simulation-tutorials-for-beginners/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LT Spice circuit simulation for begginers&lt;/a&gt;&lt;/p&gt;
@@ -338,8 +338,8 @@ Power traces - 20 mil (3 Amp max)
 Drilled diameter for signal traces - 13 mil - narrow via to get higher interconnectency
 If one must route something on bottom layer, make path short and use bridges (return strap) as on the picture:
 &lt;figure style=&#34;flex-grow: 206; flex-basis: 494px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/pcb-design-tips/2021-04-12-15-33-08.png&#34; data-size=&#34;340x165&#34;&gt;&lt;img src=&#34;https://example.com/p/pcb-design-tips/2021-04-12-15-33-08.png&#34;
-				srcset=&#34;https://example.com/p/pcb-design-tips/2021-04-12-15-33-08_hu6ce090ac5e38fa1d500ac44f2d85b103_36038_480x0_resize_box_2.png 480w, https://example.com/p/pcb-design-tips/2021-04-12-15-33-08_hu6ce090ac5e38fa1d500ac44f2d85b103_36038_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-15-33-08.png&#34; data-size=&#34;340x165&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-15-33-08.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-15-33-08_hu6ce090ac5e38fa1d500ac44f2d85b103_36038_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-15-33-08_hu6ce090ac5e38fa1d500ac44f2d85b103_36038_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;340&#34;
 				height=&#34;165&#34;
 				loading=&#34;lazy&#34;
@@ -350,8 +350,8 @@ If one must route something on bottom layer, make path short and use bridges (re
 &lt;a class=&#34;link&#34; href=&#34;https://youtu.be/y4REmZlE7Jg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Algorighm for choosing the capacitance&lt;/a&gt; is to flat out the previous circuit impedance (as looking from the end- Microcontroller for example) to the beggingin (Voltage source)
 &lt;figure style=&#34;flex-grow: 204; flex-basis: 491px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/pcb-design-tips/2021-04-12-17-30-39.png&#34; data-size=&#34;1886x921&#34;&gt;&lt;img src=&#34;https://example.com/p/pcb-design-tips/2021-04-12-17-30-39.png&#34;
-				srcset=&#34;https://example.com/p/pcb-design-tips/2021-04-12-17-30-39_hu7bdb4021bee8a2f7d13e52e86c320491_571161_480x0_resize_box_2.png 480w, https://example.com/p/pcb-design-tips/2021-04-12-17-30-39_hu7bdb4021bee8a2f7d13e52e86c320491_571161_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-17-30-39.png&#34; data-size=&#34;1886x921&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-17-30-39.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-17-30-39_hu7bdb4021bee8a2f7d13e52e86c320491_571161_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-17-30-39_hu7bdb4021bee8a2f7d13e52e86c320491_571161_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1886&#34;
 				height=&#34;921&#34;
 				loading=&#34;lazy&#34;
@@ -361,8 +361,8 @@ If one must route something on bottom layer, make path short and use bridges (re
 	&lt;/figure&gt;
 In particular, when chosing capcitance, try to flat out the peak from the previous capacitance in the circuit:
 &lt;figure style=&#34;flex-grow: 204; flex-basis: 490px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/pcb-design-tips/2021-04-12-17-29-22.png&#34; data-size=&#34;1897x929&#34;&gt;&lt;img src=&#34;https://example.com/p/pcb-design-tips/2021-04-12-17-29-22.png&#34;
-				srcset=&#34;https://example.com/p/pcb-design-tips/2021-04-12-17-29-22_hu7c765fecf3f3c5aee1a62224d2d433a3_753062_480x0_resize_box_2.png 480w, https://example.com/p/pcb-design-tips/2021-04-12-17-29-22_hu7c765fecf3f3c5aee1a62224d2d433a3_753062_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-17-29-22.png&#34; data-size=&#34;1897x929&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-17-29-22.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-17-29-22_hu7c765fecf3f3c5aee1a62224d2d433a3_753062_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/pcb-design-tips/2021-04-12-17-29-22_hu7c765fecf3f3c5aee1a62224d2d433a3_753062_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1897&#34;
 				height=&#34;929&#34;
 				loading=&#34;lazy&#34;
@@ -379,8 +379,8 @@ Initial resons for having several capacitance:&lt;/p&gt;
     &gt;YouTube&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
 Careful about the return paths:
 &lt;figure style=&#34;flex-grow: 141; flex-basis: 340px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/pcb-design-tips/image0.png&#34; data-size=&#34;1267x894&#34;&gt;&lt;img src=&#34;https://example.com/p/pcb-design-tips/image0.png&#34;
-				srcset=&#34;https://example.com/p/pcb-design-tips/image0_hu48a5ab7b6ddfa8b32c62c99b002c51bb_512304_480x0_resize_box_2.png 480w, https://example.com/p/pcb-design-tips/image0_hu48a5ab7b6ddfa8b32c62c99b002c51bb_512304_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image0.png&#34; data-size=&#34;1267x894&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image0.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image0_hu48a5ab7b6ddfa8b32c62c99b002c51bb_512304_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/pcb-design-tips/image0_hu48a5ab7b6ddfa8b32c62c99b002c51bb_512304_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1267&#34;
 				height=&#34;894&#34;
 				loading=&#34;lazy&#34;
@@ -392,8 +392,8 @@ For more information on return paths check &lt;a class=&#34;link&#34; href=&#34;
     &gt;Understanding return paths&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Suggestion on ground connection:&lt;br&gt;
 &lt;figure style=&#34;flex-grow: 276; flex-basis: 664px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/pcb-design-tips/unnamed.png&#34; data-size=&#34;512x185&#34;&gt;&lt;img src=&#34;https://example.com/p/pcb-design-tips/unnamed.png&#34;
-				srcset=&#34;https://example.com/p/pcb-design-tips/unnamed_huec8d75f884f82461a623ebbc3a8d619c_25429_480x0_resize_box_2.png 480w, https://example.com/p/pcb-design-tips/unnamed_huec8d75f884f82461a623ebbc3a8d619c_25429_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/unnamed.png&#34; data-size=&#34;512x185&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/unnamed.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/unnamed_huec8d75f884f82461a623ebbc3a8d619c_25429_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/pcb-design-tips/unnamed_huec8d75f884f82461a623ebbc3a8d619c_25429_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;512&#34;
 				height=&#34;185&#34;
 				loading=&#34;lazy&#34;
@@ -403,8 +403,8 @@ For more information on return paths check &lt;a class=&#34;link&#34; href=&#34;
 	&lt;/figure&gt;&lt;br&gt;
 Watch out traces: &lt;br&gt;
 &lt;figure style=&#34;flex-grow: 179; flex-basis: 430px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/pcb-design-tips/image1.png&#34; data-size=&#34;1596x890&#34;&gt;&lt;img src=&#34;https://example.com/p/pcb-design-tips/image1.png&#34;
-				srcset=&#34;https://example.com/p/pcb-design-tips/image1_hu464f41712d8050c906206848c3acbd45_448208_480x0_resize_box_2.png 480w, https://example.com/p/pcb-design-tips/image1_hu464f41712d8050c906206848c3acbd45_448208_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image1.png&#34; data-size=&#34;1596x890&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image1.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image1_hu464f41712d8050c906206848c3acbd45_448208_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/pcb-design-tips/image1_hu464f41712d8050c906206848c3acbd45_448208_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1596&#34;
 				height=&#34;890&#34;
 				loading=&#34;lazy&#34;
@@ -414,8 +414,8 @@ Watch out traces: &lt;br&gt;
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Paths when decopling introduced:&lt;br&gt;
 &lt;figure style=&#34;flex-grow: 156; flex-basis: 374px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/pcb-design-tips/image3.png&#34; data-size=&#34;1358x870&#34;&gt;&lt;img src=&#34;https://example.com/p/pcb-design-tips/image3.png&#34;
-				srcset=&#34;https://example.com/p/pcb-design-tips/image3_hu6c93ce00bb5786ab3082281ac488313d_411354_480x0_resize_box_2.png 480w, https://example.com/p/pcb-design-tips/image3_hu6c93ce00bb5786ab3082281ac488313d_411354_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image3.png&#34; data-size=&#34;1358x870&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image3.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image3_hu6c93ce00bb5786ab3082281ac488313d_411354_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/pcb-design-tips/image3_hu6c93ce00bb5786ab3082281ac488313d_411354_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1358&#34;
 				height=&#34;870&#34;
 				loading=&#34;lazy&#34;
@@ -425,8 +425,8 @@ Watch out traces: &lt;br&gt;
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Reason behind twisting the power cables:&lt;br&gt;
 &lt;figure style=&#34;flex-grow: 225; flex-basis: 541px&#34;&gt;
-		&lt;a href=&#34;https://example.com/p/pcb-design-tips/image2.png&#34; data-size=&#34;512x227&#34;&gt;&lt;img src=&#34;https://example.com/p/pcb-design-tips/image2.png&#34;
-				srcset=&#34;https://example.com/p/pcb-design-tips/image2_hu840bad735abac73a1bddf7cac09e7d2d_92769_480x0_resize_box_2.png 480w, https://example.com/p/pcb-design-tips/image2_hu840bad735abac73a1bddf7cac09e7d2d_92769_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image2.png&#34; data-size=&#34;512x227&#34;&gt;&lt;img src=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image2.png&#34;
+				srcset=&#34;https://vasilyrakche.github.io/p/pcb-design-tips/image2_hu840bad735abac73a1bddf7cac09e7d2d_92769_480x0_resize_box_2.png 480w, https://vasilyrakche.github.io/p/pcb-design-tips/image2_hu840bad735abac73a1bddf7cac09e7d2d_92769_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;512&#34;
 				height=&#34;227&#34;
 				loading=&#34;lazy&#34;

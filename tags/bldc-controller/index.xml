@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BLDC controller on Legged Robotics</title>
-    <link>https://example.com/tags/bldc-controller/</link>
+    <link>https://vasilyrakche.github.io/tags/bldc-controller/</link>
     <description>Recent content in BLDC controller on Legged Robotics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/bldc-controller/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vasilyrakche.github.io/tags/bldc-controller/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All about mosfets</title>
-      <link>https://example.com/p/all-about-mosfets/</link>
+      <link>https://vasilyrakche.github.io/p/all-about-mosfets/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/p/all-about-mosfets/</guid>
+      <guid>https://vasilyrakche.github.io/p/all-about-mosfets/</guid>
       <description>Slew-rate Control From texas instruments  
 Slew-rate means the slope of the VDS for the mosfet  
 Driver for mosfet control Capacitors R3 based on (val wasnt mentioned)8.3.1.2.1 Serial Peropheral Interface
@@ -23,19 +23,19 @@ C6 suggested to be split in two CVM1(X5R or X7R, 0.</description>
     
     <item>
       <title>Handling Driver</title>
-      <link>https://example.com/p/handling-driver/</link>
+      <link>https://vasilyrakche.github.io/p/handling-driver/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/p/handling-driver/</guid>
+      <guid>https://vasilyrakche.github.io/p/handling-driver/</guid>
       <description>Cautions  Power supply must be able to sink-in current, if cant must design Shunt Regulators Pre-charge circuit must be used, more intuition about it: How the pre-charge works, some intuituion Do not connect ground pins of the CAN connector between Motor Drives Isolation of grounds is desired between the computer and Controller. In case of controll with TTY, possible solution: CAN Board Connecting MCUs to CAN Some internal settings in Firmware are calculated on Power-on.</description>
     </item>
     
     <item>
       <title>Notes about selecting components for BLDC driver</title>
-      <link>https://example.com/p/bldc-components/</link>
+      <link>https://vasilyrakche.github.io/p/bldc-components/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/p/bldc-components/</guid>
+      <guid>https://vasilyrakche.github.io/p/bldc-components/</guid>
       <description>STM32F446re hardware design choices Example from Nucle64 Development board design from STM:
  
 Another Example from STM32 series Evaluation board (Two capacitors for decoupling smaller C21 and the One which is selected with white outline):  
@@ -44,10 +44,10 @@ In these schematics the closer is the bigger capacitor, however, that doesn&amp;
     
     <item>
       <title>PCB design tips</title>
-      <link>https://example.com/p/pcb-design-tips/</link>
+      <link>https://vasilyrakche.github.io/p/pcb-design-tips/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/p/pcb-design-tips/</guid>
+      <guid>https://vasilyrakche.github.io/p/pcb-design-tips/</guid>
       <description>Suggestions on placing the MOSFETs to prevent ringing LT Spice circuit simulation for begginers
 General guideliness Based on the Eric Bogatin on Breaking Bad Habits in PCB Design.Some additional details in his article Signal trace width - 6 mil (1 Amp max) Power traces - 20 mil (3 Amp max) Drilled diameter for signal traces - 13 mil - narrow via to get higher interconnectency If one must route something on bottom layer, make path short and use bridges (return strap) as on the picture:   Algorighm for choosing the capacitance is to flat out the previous circuit impedance (as looking from the end- Microcontroller for example) to the beggingin (Voltage source)   In particular, when chosing capcitance, try to flat out the peak from the previous capacitance in the circuit:   Initial resons for having several capacitance:</description>
     </item>
