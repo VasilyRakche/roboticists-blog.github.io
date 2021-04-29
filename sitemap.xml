@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vasilyrakche.github.io/categories/bldc/</loc>
+    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasilyrakche.github.io/p/bldc/</loc>
+    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasilyrakche.github.io/categories/</loc>
+    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasilyrakche.github.io/</loc>
+    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasilyrakche.github.io/tags/motor/</loc>
+    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasilyrakche.github.io/post/</loc>
+    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasilyrakche.github.io/tags/</loc>
+    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vasilyrakche.github.io/about/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
@@ -23,11 +58,6 @@
   </url>
   
   <url>
-    <loc>https://vasilyrakche.github.io/categories/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://vasilyrakche.github.io/p/creating-markdown-sites/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
@@ -39,11 +69,6 @@
   
   <url>
     <loc>https://vasilyrakche.github.io/p/handling-driver/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -69,16 +94,6 @@
   
   <url>
     <loc>https://vasilyrakche.github.io/p/pcb-design-tips/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/post/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/tags/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
   

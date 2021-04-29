@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Unleash motor power'><title>BLDC Motor</title>
+
+<link rel='canonical' href='https://vasilyrakche.github.io/p/bldc/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='BLDC Motor'>
+<meta property='og:description' content='Unleash motor power'>
+<meta property='og:url' content='https://vasilyrakche.github.io/p/bldc/'>
+<meta property='og:site_name' content='Legged Robotics'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='motor' /><meta property='article:published_time' content='2021-04-26T08:40:58&#43;02:00'/><meta property='article:modified_time' content='2021-04-26T08:40:58&#43;02:00'/><meta property='og:image' content='https://vasilyrakche.github.io/p/bldc/pexels-lachlan-ross-6510369.jpg' />
+<meta name="twitter:title" content="BLDC Motor">
+<meta name="twitter:description" content="Unleash motor power"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://vasilyrakche.github.io/p/bldc/pexels-lachlan-ross-6510369.jpg' />
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+        <h1 class="site-name"><a href="https://vasilyrakche.github.io">Legged Robotics</a></h1>
+        <h2 class="site-description">All that we know about robotics</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://vasilyrakche.github.io" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/bldc/">
+                <img src="/p/bldc/pexels-lachlan-ross-6510369_hu3d03a01dcc18bc5be0e67db3d8d209a6_70694_800x0_resize_q75_box.jpg"
+                        srcset="/p/bldc/pexels-lachlan-ross-6510369_hu3d03a01dcc18bc5be0e67db3d8d209a6_70694_800x0_resize_q75_box.jpg 800w, /p/bldc/pexels-lachlan-ross-6510369_hu3d03a01dcc18bc5be0e67db3d8d209a6_70694_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post BLDC Motor" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/bldc/" >
+                BLDC
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/bldc/">BLDC Motor</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Unleash motor power
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Apr 26, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="rough-calculations-for-required-characteristics">Rough calculations for required characteristics</h2>
+<p><a class="link" href="https://forum.openrov.com/t/brushless-motor-calculation/613"  target="_blank" rel="noopener"
+    >Brushless motor calculation forum thread</a></p>
+<h2 id="motors-to-buy">Motors to buy</h2>
+<p>Several criterias to have in mind; in no particular order:</p>
+<ul>
+<li>Pancake shape (bigger diameter, thinner case) - more torque</li>
+<li>Smaller weight/size</li>
+<li>Smaller KV (more torque/less speed)</li>
+<li>Bigger number of poles (more torque)</li>
+<li>Price</li>
+<li>Overall power</li>
+<li>Max current and rated voltage</li>
+<li>Build quality</li>
+</ul>
+<h3 id="narrow-choice-motors">Narrow choice motors</h3>
+<h4 id="maytech">Maytech</h4>
+<p><a class="link" href="https://german.alibaba.com/product-detail/maytech-8626-100kv-brushless-outrunner-motor-with-large-uav-system-60464738343.html?spm=a2700.galleryofferlist.normal_offer.d_title.3f025493aLw9R6"  target="_blank" rel="noopener"
+    >Maytech 8626 100kv 86x26,5mm 250g</a></p>
+<h4 id="t-motor">T-Motor</h4>
+<p><a class="link" href="https://store-en.tmotor.com/goods.php?id=998"  target="_blank" rel="noopener"
+    >T-Motor Antigravity 5008 KV170 270mOm 6s 128g 24N28P 55.6x32mm 720W 90Dollars </a><br>
+<a class="link" href="https://store-en.tmotor.com/goods.php?id=774"  target="_blank" rel="noopener"
+    >T-Motor Antigravity 6007 KV160 227mOm 6-12s 180g 18N22P 67x30.1mm 864W 120Dollars</a><br>
+<a class="link" href="https://store-en.tmotor.com/goods.php?id=1113"  target="_blank" rel="noopener"
+    >T-Motor Antigravity 6007II KV160 178mOm 12S 159g 24N28P 67.2x26.1 1120W 130Dollars</a></p>
+<hr>
+<h3 id="other-interesting-options">Other interesting options</h3>
+<h4 id="sunnysky-motors">Sunnysky motors</h4>
+<p><a class="link" href="https://edge-china.en.alibaba.com/product/60689277125-803892009/Sunnysky_M8_8108_100KV_multicopter_quadcopter_brushless_dc_motor_for_industrial_drones.html?spm=a2700.shop_plser.41413.29.2eb15cda9QTcbX"  target="_blank" rel="noopener"
+    >MIT Mini cheetah 135KV 123 mOm 230g 86.8x23.9 36/42 Min order 1  Imax-30A/30s</a><br>
+<a class="link" href="https://edge-china.en.alibaba.com/product/60590340370-803892009/M8_KV135_for_professional_video_surveillance_multirotor_uav_drone_motor.html?spm=a2700.shop_plser.41413.16.1fc45cdaxQ7QlV"  target="_blank" rel="noopener"
+    >Link No.2 MIT Mini cheetah 135KV Min order 4</a><br>
+<a class="link" href="https://edge-china.en.alibaba.com/product/60772795581-803892009/Sunnysky_M8_KV100_1100W_Brushless_DC_Motor_Professional_Industry_Drone_Motor.html?spm=a2700.shop_plser.41413.31.43285e06i66VkD"  target="_blank" rel="noopener"
+    >MIT Mini cheetah 100kV 181mOm 230g 36/32 86.8x23.9 Min order 4 Imax-25A/180s</a><br>
+<a class="link" href="https://edge-china.en.alibaba.com/product/60772747571-803074382/Sunnysky_V5210_300KV_1KW_Brushless_Motor_With_60A_ESC_6S_Lipo.html?spm=a2700.shop_plser.41413.33.72e45cda2Ix3f6"  target="_blank" rel="noopener"
+    >Sunnysky V5210 300KV 76mOm 200g 59x25 24/28 Min order 1 Imax-44A/30s</a><br>
+<a class="link" href="https://edge-china.en.alibaba.com/product/60833235668-803074382/Original_Sunnysky_V4004_300KV_brushless_outrunner_dc_motor_for_RC_drone_multirotor_quadcopter_multicopter_aircraft.html?spm=a2700.shop_plser.41413.28.7b405cdacepQrv"  target="_blank" rel="noopener"
+    >Sunnysky V4004 300KV 448mOm 51g 43.6x16 18/24 Min order 1 Imax-10A/60s</a><br>
+<a class="link" href="https://edge-china.en.alibaba.com/product/60772642998-803074382/Sunnysky_V4006_KV320_ESC_30A_With_4_6S_Lipo_Mini_RC_Drone_4_Axis_Quadcopter_Motor.html?spm=a2700.shop_plser.41413.15.69e85cdafGyE6k"  target="_blank" rel="noopener"
+    >Sunnysky V4006 320KV 230mOm 66g 43.6x18mm 18/24 Min order 1 Imax-15A/60s</a><br>
+<a class="link" href="https://edge-china.en.alibaba.com/product/60527522696-803074382/Sunnysky_V5208_kv340_long_flight_time_drone_motor_good_bearing_ezo_beraing_for_multirotor_rc_model_plane_uav_power_system.html?spm=a2700.shop_plser.41413.13.73e57e0aBecyfn"  target="_blank" rel="noopener"
+    >Sunnysky V5208 340KV 78mOm 175g 59x23 24/28 Min order 1 Imax-35A/30s</a></p>
+<h4 id="others">Others</h4>
+<p><a class="link" href="http://www.rc-eaglepower.com/en/ProductDetail/4559296.html"  target="_blank" rel="noopener"
+    ><strong>Eaglepower LA8308 drone UAV 100kV 246mOm 90x26.5mm 279g</strong></a><br>
+<a class="link" href="https://de.aliexpress.com/item/32291969073.html?spm=a2g0o.detail.1000014.28.47064bd56IQiJY&amp;gps-id=pcDetailBottomMoreOtherSeller&amp;scm=1007.33416.213724.0&amp;scm_id=1007.33416.213724.0&amp;scm-url=1007.33416.213724.0&amp;pvid=0ec60b58-6e55-488f-ae50-275d7ed07af1&amp;_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.33416.213724.0,pvid:0ec60b58-6e55-488f-ae50-275d7ed07af1,tpp_buckets:668%230%23131923%2347_668%23888%233325%232_23416%230%23213724%230_23416%234721%2321967%23150_23416%234722%2321972%2310_668%232846%238108%231977_668%235811%2327178%2335_668%232717%237558%23187_668%231000022185%231000066058%230_668%233422%2315392%23994_4452%230%23214000%230_4452%233474%2315675%23251_4452%234862%2324463%23398_4452%233098%239599%23236_4452%235108%2323442%2319_4452%233564%2316062%23655"  target="_blank" rel="noopener"
+    >140V 245g 87mm </a><br>
+<a class="link" href="https://de.aliexpress.com/item/32915350202.html?spm=a2g0x.12010615.8148356.60.73762800keM9NL"  target="_blank" rel="noopener"
+    >7025 TYI-POWER 170KV 87x34mm 189mΩ</a><br>
+<a class="link" href="https://de.aliexpress.com/item/32292045079.html?spm=a2g0x.12010615.8148356.66.fca0737dZmIrvt"  target="_blank" rel="noopener"
+    >UAV Motor 350KV 48x21mm 90g  </a><br>
+<a class="link" href="https://de.aliexpress.com/item/695736037.html?spm=a2g0x.12010615.8148356.40.161164d4NcSese"  target="_blank" rel="noopener"
+    >Drone Motor 600kV 45x25mm 18n24p 86g</a><br>
+<a class="link" href="https://de.aliexpress.com/item/4001270979778.html?spm=a2g0o.detail.1000014.26.47064bd56IQiJY&amp;gps-id=pcDetailBottomMoreOtherSeller&amp;scm=1007.33416.213724.0&amp;scm_id=1007.33416.213724.0&amp;scm-url=1007.33416.213724.0&amp;pvid=0ec60b58-6e55-488f-ae50-275d7ed07af1&amp;_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.33416.213724.0,pvid:0ec60b58-6e55-488f-ae50-275d7ed07af1,tpp_buckets:668%230%23131923%2347_668%23888%233325%232_23416%230%23213724%230_23416%234721%2321967%23150_23416%234722%2321972%2310_668%232846%238108%231977_668%235811%2327178%2335_668%232717%237558%23187_668%231000022185%231000066058%230_668%233422%2315392%23994_4452%230%23214000%230_4452%233474%2315675%23251_4452%234862%2324463%23398_4452%233098%239599%23236_4452%235108%2323442%2319_4452%233564%2316062%23655"  target="_blank" rel="noopener"
+    >105kV UAV Motor 87x24.5mm 228g 186mOm </a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/motor/">motor</a>
+        
+    </section>
+
+
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vasilyrakche-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Legged Robotics
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

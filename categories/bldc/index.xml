@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BLDC on Legged Robotics</title>
+    <link>https://vasilyrakche.github.io/categories/bldc/</link>
+    <description>Recent content in BLDC on Legged Robotics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Apr 2021 08:40:58 +0200</lastBuildDate><atom:link href="https://vasilyrakche.github.io/categories/bldc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BLDC Motor</title>
+      <link>https://vasilyrakche.github.io/p/bldc/</link>
+      <pubDate>Mon, 26 Apr 2021 08:40:58 +0200</pubDate>
+      
+      <guid>https://vasilyrakche.github.io/p/bldc/</guid>
+      <description>Rough calculations for required characteristics Brushless motor calculation forum thread
+Motors to buy Several criterias to have in mind; in no particular order:
+ Pancake shape (bigger diameter, thinner case) - more torque Smaller weight/size Smaller KV (more torque/less speed) Bigger number of poles (more torque) Price Overall power Max current and rated voltage Build quality  Narrow choice motors Maytech Maytech 8626 100kv 86x26,5mm 250g
+T-Motor T-Motor Antigravity 5008 KV170 270mOm 6s 128g 24N28P 55.</description>
+    </item>
+    
+  </channel>
+</rss>
