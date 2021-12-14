@@ -1,551 +1,345 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-	<meta name="generator" content="Hugo 0.80.0" /><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='All that we know about robotics'><title>Legged Robotics</title>
+<!doctype html>
+<html class=" no-js" lang="en-us">
+  <head>
+	<meta name="generator" content="Hugo 0.90.1" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page - Vasilije Rakcevic</title>
+    <meta name="description" content="AAA."><meta name="robots" content="index, follow"><link rel="shortcut icon" href="/favicon.ico">
+<style>
+  @font-face{font-family:open sans;font-weight:600;font-style:normal;src:url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnZ2MAKAc2x4R1uOSeegc5U.eot);src:url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnZ2MAKAc2x4R1uOSeegc5U.eot?#iefix)format("embedded-opentype"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2)format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff)format("woff"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf)format("truetype"),url(//fonts.gstatic.com/l/font?kit=MTP_ySUJH_bn48VBG8sNSllIn5tFQcqMuf-jhyJP0ps&skey=a162967ffaa5aa08&v=v13#OpenSans)format("svg")}@font-face{font-family:open sans;font-weight:700;font-style:normal;src:url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot);src:url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot?#iefix)format("embedded-opentype"),local("Open Sans Bold"),local("Open-Sans-700"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2)format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff)format("woff"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf)format("truetype"),url(//fonts.gstatic.com/l/font?kit=k3k702ZOKiLJc3WVjuplzFlIn5tFQcqMuf-jhyJP0ps&skey=cd9e1a36bb25a3c3&v=v13#OpenSans)format("svg")}@font-face{font-family:open sans;font-weight:400;font-style:normal;src:url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot);src:url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot?#iefix)format("embedded-opentype"),local("Open Sans"),local("Open-Sans-regular"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2)format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff)format("woff"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf)format("truetype"),url(//fonts.gstatic.com/l/font?kit=cJZKeOuBrn4kERxqtaUH3Zbd9NUM7myrQQz30yPaGQ4&skey=62c1cbfccc78b4b2&v=v13#OpenSans)format("svg")}html,body,div,ul,li,h1,a,img,span,p{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{font-family:open sans,helvetica neue,Helvetica,Arial,sans-serif;font-size:62.5%;line-height:1.5;background:#fff;color:#2f2f2f;overflow-x:hidden;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;hyphens:auto;-webkit-hyphens:auto}a{color:#224afa;text-decoration:none}a:hover{color:#1538d1}ul{list-style:none}.padder{padding-left:2em;padding-right:2em}.accent-text{color:#224afa}.default-text{color:#2f2f2f}.bold-text{font-weight:700}.transparent{opacity:0}.break-word{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-break:break-word;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}.clearfix:after{content:"";display:block;clear:both}.nav-container,.header{background:#f1f1f1}.navbar{position:relative;z-index:5;height:7.1em;max-height:7.1em;padding-top:2em}.logo{float:left}.logo:before{display:inline-block;vertical-align:middle;content:'';height:100%;width:0}.logo img{vertical-align:middle}.links{visibility:hidden;opacity:0;position:absolute;top:100%;right:-2em;left:-2em;padding:1em 0;background:#f1f1f1;text-align:center;-webkit-box-shadow:0 5px 7px 0 rgba(1,1,1,.1);box-shadow:0 5px 7px rgba(1,1,1,.1);-webkit-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s}.links li{padding:.5em 0}.links a{color:#989898;font-size:1.8em;font-weight:600;-webkit-transition:all 500ms;-moz-transition:all 500ms;-ms-transition:all 500ms;-o-transition:all 500ms;transition:all 500ms}.links a:hover{color:#2f2f2f}.links a.active{color:#2f2f2f}.main-description{position:relative}.main-description h1{position:relative;font-size:4em;font-weight:700;line-height:1.15;padding-top:1.3em;padding-bottom:1.3em;z-index:1}.main-description img{position:absolute;bottom:0;display:block;max-width:100%;height:auto}.category{margin-top:3em}.category.line{margin:0}.category-label{font-size:1.6em;font-weight:700;text-transform:uppercase;margin-bottom:.472em}.category-content{color:#989898;font-size:1.8em;font-weight:600}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes slideInDown{from{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes slideInDown{from{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.slideInDown{-webkit-animation-duration:1.3s;animation-duration:1.3s;-webkit-animation-name:slideInDown;animation-name:slideInDown}@-webkit-keyframes fadeIn{0%{opacity:0}40%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:0}40%{opacity:0}100%{opacity:1}}.fadeIn{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-name:fadeIn;animation-name:fadeIn}@media only screen and (min-width:22.5625em){.main-description h1{font-size:4.6em;padding-top:1.923em;padding-bottom:1.923em}.category{margin-top:5em}.category-label{margin-bottom:.625em}}@media only screen and (min-width:33.5625em){.main-description h1{font-size:5.2em}}@media only screen and (min-width:46.3125em){.links{visibility:visible;opacity:1;position:static;float:right;width:auto;padding:0;height:100%;-webkit-box-shadow:none;box-shadow:none}.links:before{display:inline-block;vertical-align:middle;content:'';height:100%;width:0}.links li{display:inline-block;width:auto;margin-left:4em;vertical-align:middle}.burger-holder{display:none}.showBurger .burger-holder{display:block}.showBurger .links{visibility:hidden;opacity:0;position:absolute;float:none;height:auto;padding:1em 0;-webkit-box-shadow:0 5px 7px 0 rgba(1,1,1,.1);box-shadow:0 5px 7px rgba(1,1,1,.1)}.showBurger .links:before{display:none}.showBurger .links>li{display:list-item;margin:0}.main-description h1{font-size:5.4em;line-height:1.1428;padding-top:2.3148em;padding-bottom:2.3148em}.category{width:100%;float:left}.category>div{float:left}.category-label{width:30%;margin-bottom:0}.category-content{width:70%}.projects{margin-top:10em}}@media only screen and (min-width:58.5em){.main-description h1{padding-bottom:3.907em}.category{margin-top:7.5em}.category-label{width:42.47787%}.category-content{width:57.52213%}}@media only screen and (min-width:73.125em){.container{max-width:117em;margin:0 auto}.showBurger .links{left:-100%;right:-100%}}
+</style>
+
+
+<noscript id="deferredCss">
+  <link rel="stylesheet" href="/css/app.min.7198109ac32fcbdb993ce58a17e7eee03ca3bfdde049cc25b23db8e7bcbf2497.css">
+</noscript>
 
-<link rel='canonical' href='https://vasilyrakche.github.io/'>
-
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Legged Robotics'>
-<meta property='og:description' content='All that we know about robotics'>
-<meta property='og:url' content='https://vasilyrakche.github.io/'>
-<meta property='og:site_name' content='Legged Robotics'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2021-04-26T08:40:58&#43;02:00 '/>
-<meta name="twitter:title" content="Legged Robotics">
-<meta name="twitter:description" content="All that we know about robotics"><link rel="alternate" type="application/rss&#43;xml" href="https://vasilyrakche.github.io/index.xml">
-    </head>
-    <body class="">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.body.dataset.scheme = 'dark';
-        } else {
-            document.body.dataset.scheme = 'light';
-        }
-    })();
-</script><div class="container main-container flex on-phone--column extended ">
-            <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header class="site-info">
-        
-        <h1 class="site-name"><a href="https://vasilyrakche.github.io">Legged Robotics</a></h1>
-        <h2 class="site-description">All that we know about robotics</h2>
-    </header>
-
-    <ol class="menu" id="main-menu">
-        
-        
-        
-
-        <li  class='current' >
-            <a href='/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>Home</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/about/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/archives/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/search/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-
-        
-            <li id="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <span>Dark Mode</span>
-            </li>
-        
-    </ol>
-</aside>
-
-            <main class="main full-width">
-    
-    
-    
-    
-
-    <section class="article-list">
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/bldc/">
-                <img src="/p/bldc/pexels-lachlan-ross-6510369_hu3d03a01dcc18bc5be0e67db3d8d209a6_70694_800x0_resize_q75_box.jpg"
-                        srcset="/p/bldc/pexels-lachlan-ross-6510369_hu3d03a01dcc18bc5be0e67db3d8d209a6_70694_800x0_resize_q75_box.jpg 800w, /p/bldc/pexels-lachlan-ross-6510369_hu3d03a01dcc18bc5be0e67db3d8d209a6_70694_1600x0_resize_q75_box.jpg 1600w"
-                        width="800" 
-                        height="533" 
-                        loading="lazy"
-                        alt="Featured image of post BLDC Motor" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/bldc/" >
-                BLDC
-            </a>
-        
-    </header>
-    
-
-    <h2 class="article-title">
-        <a href="/p/bldc/">BLDC Motor</a>
-    </h2>
-
-    
-    <h3 class="article-subtitle">
-        Unleash motor power
-    </h3>
-    <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <time class="article-time--published">Apr 26, 2021</time>
-    </footer></div>
-</header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/all-about-mosfets/">
-                <img src="/p/all-about-mosfets/pexels-binyamin-mellish-17840_hu3d03a01dcc18bc5be0e67db3d8d209a6_117902_800x0_resize_q75_box.jpg"
-                        srcset="/p/all-about-mosfets/pexels-binyamin-mellish-17840_hu3d03a01dcc18bc5be0e67db3d8d209a6_117902_800x0_resize_q75_box.jpg 800w, /p/all-about-mosfets/pexels-binyamin-mellish-17840_hu3d03a01dcc18bc5be0e67db3d8d209a6_117902_1600x0_resize_q75_box.jpg 1600w"
-                        width="800" 
-                        height="533" 
-                        loading="lazy"
-                        alt="Featured image of post All about mosfets" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/pcb/" style="background-color: #2a9d8f; color: #fff;">
-                PCB
-            </a>
-        
-    </header>
-    
-
-    <h2 class="article-title">
-        <a href="/p/all-about-mosfets/">All about mosfets</a>
-    </h2>
-
-    
-    <h3 class="article-subtitle">
-        For those curious about semiconductors
-    </h3>
-    <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <time class="article-time--published">Apr 22, 2021</time>
-    </footer></div>
-</header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/creating-markdown-sites/">
-                <img src="/p/creating-markdown-sites/pexels-reafon_hu3d03a01dcc18bc5be0e67db3d8d209a6_874108_800x0_resize_q75_box.jpg"
-                        srcset="/p/creating-markdown-sites/pexels-reafon_hu3d03a01dcc18bc5be0e67db3d8d209a6_874108_800x0_resize_q75_box.jpg 800w, /p/creating-markdown-sites/pexels-reafon_hu3d03a01dcc18bc5be0e67db3d8d209a6_874108_1600x0_resize_q75_box.jpg 1600w"
-                        width="800" 
-                        height="1199" 
-                        loading="lazy"
-                        alt="Featured image of post Creating Markdown Websites" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/website/" >
-                Website
-            </a>
-        
-    </header>
-    
-
-    <h2 class="article-title">
-        <a href="/p/creating-markdown-sites/">Creating Markdown Websites</a>
-    </h2>
-
-    
-    <h3 class="article-subtitle">
-        Sorry if you dont know the Markdown elegance
-    </h3>
-    <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <time class="article-time--published">Apr 22, 2021</time>
-    </footer></div>
-</header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/handling-driver/">
-                <img src="/p/handling-driver/pexels-matheus-bertelli-4558403_hu3d03a01dcc18bc5be0e67db3d8d209a6_471037_800x0_resize_q75_box.jpg"
-                        srcset="/p/handling-driver/pexels-matheus-bertelli-4558403_hu3d03a01dcc18bc5be0e67db3d8d209a6_471037_800x0_resize_q75_box.jpg 800w, /p/handling-driver/pexels-matheus-bertelli-4558403_hu3d03a01dcc18bc5be0e67db3d8d209a6_471037_1600x0_resize_q75_box.jpg 1600w"
-                        width="800" 
-                        height="1200" 
-                        loading="lazy"
-                        alt="Featured image of post Handling Driver" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/pcb/" style="background-color: #2a9d8f; color: #fff;">
-                PCB
-            </a>
-        
-    </header>
-    
-
-    <h2 class="article-title">
-        <a href="/p/handling-driver/">Handling Driver</a>
-    </h2>
-
-    
-    <h3 class="article-subtitle">
-        How to not get into trouble
-    </h3>
-    <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <time class="article-time--published">Apr 22, 2021</time>
-    </footer></div>
-</header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/bldc-components/">
-                <img src="/p/bldc-components/pexels-guillaume-meurice-3757231_hu3d03a01dcc18bc5be0e67db3d8d209a6_141439_800x0_resize_q75_box.jpg"
-                        srcset="/p/bldc-components/pexels-guillaume-meurice-3757231_hu3d03a01dcc18bc5be0e67db3d8d209a6_141439_800x0_resize_q75_box.jpg 800w, /p/bldc-components/pexels-guillaume-meurice-3757231_hu3d03a01dcc18bc5be0e67db3d8d209a6_141439_1600x0_resize_q75_box.jpg 1600w"
-                        width="800" 
-                        height="999" 
-                        loading="lazy"
-                        alt="Featured image of post Notes about selecting components for BLDC driver" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/pcb/" style="background-color: #2a9d8f; color: #fff;">
-                PCB
-            </a>
-        
-    </header>
-    
-
-    <h2 class="article-title">
-        <a href="/p/bldc-components/">Notes about selecting components for BLDC driver</a>
-    </h2>
-
-    
-    <h3 class="article-subtitle">
-        About development of the PCB
-    </h3>
-    <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <time class="article-time--published">Apr 22, 2021</time>
-    </footer></div>
-</header>
-</article>
-        
-    </section>
-    <nav class='pagination'>
-        
-        
-
-        
-            
-                <span class='page-link current'>1</span>
-                
-            
-            
-                    <a class='page-link' href='/page/2/'>2</a>
-                
-            
-    </nav>
-
-<footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2020 - 
-        
-        2021 Legged Robotics
-    </section>
-    
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
-    </section>
-</footer>
-            </main>
-    
-    
-    <aside class="sidebar right-sidebar sticky">
-        
-            <form action="/search/" class="search-form widget" >
-        <p>
-            <label>Search</label>
-            <input name="keyword" required placeholder="Type something..." />
-        
-            <button title="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-            </button>
-        </p>
-    </form>
-        
-            <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Archives</h2>
-
-        
-        
-        
-        
-        
-        <div class="widget-archive--list">
-            <div class="archives-year">
-                    <a href="/archives/#2021">
-                        
-                            <span class="year">2021</span>
-                            <span class="count">6</span>
-                        
-                    </a> 
-                </div>
-            
-        </div>
-    </section>
-        
-            <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">Tags</h2>
-
-    <div class="tagCloud-tags">
-        
-            <a href="/tags/bldc-controller/" class="font_size_4">
-                BLDC controller
-            </a>
-        
-            <a href="/tags/electronics/" class="font_size_1">
-                electronics
-            </a>
-        
-            <a href="/tags/markdown/" class="font_size_1">
-                markdown
-            </a>
-        
-            <a href="/tags/motor/" class="font_size_1">
-                motor
-            </a>
-        
-            <a href="/tags/website/" class="font_size_1">
-                website
-            </a>
-        
-    </div>
-</section>
-        
-    </aside>
-
-
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
-                >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+  document.createElement("picture");
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/picturefill@3.0.3/dist/picturefill.min.js" integrity="sha256-iT+n/otuaeKCgxnASny7bxKeqCDbaV1M7VdX1ZRQtqg=" crossorigin="anonymous"></script>
+</head>
+  <body><!--[if lte IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]--><noscript>For full functionality of this site it is necessary to enable JavaScript. Here are the <a href="//www.enable-javascript.com" target="_blank" rel="noreferrer nofollow">instructions how to enable JavaScript in your web browser</a>.</noscript><div class="main-container">
 
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
+<div class="nav-container">
+  <div class="container">
+    <div class="padder">
+      <div class="navbar animated slideInDown">
+        <div class="logo"><a href="https://example.com"><img src="/img/v_logo.jpg" alt="Vasilije Rakcevic logo"></a></div>
+        <div class="burger-holder">
+          <div class="burger">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+          </div>
+        </div>
+        <ul class="links">
+          <li><a href="/" class="active">Home</a></li><li><a href="/about">About</a></li></ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-        document.head.appendChild(customFont);
-    }());
+<div class="header">
+  <div class="container">
+    <div class="padder">
+      <div class="main-description animated fadeIn"><h1 class="break-word"><span class="accent-text">Roboticist </span> by heart.</h1>
+
+
+  
+  
+  
+  
+
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  <picture>
+    
+    <source media="(max-width: 46.25em)" srcset="/uploads/Inspiration_hub0588a34d98bc1c066aa221bf4bb627a_523605_848x443_fit_q75_bgffffff_box_3.jpg 848w, /uploads/Inspiration_hub0588a34d98bc1c066aa221bf4bb627a_523605_565x420_fit_q75_bgffffff_box_3.jpg 565w, /uploads/Inspiration_hub0588a34d98bc1c066aa221bf4bb627a_523605_360x318_fit_q75_bgffffff_box_3.jpg 360w" />
+    
+    
+      
+        
+        <img src="/uploads/Inspiration_hub0588a34d98bc1c066aa221bf4bb627a_523605_1170x500_fill_q75_bgffffff_box_smart1_3.jpg" alt="Scatches for new robotic leg design" />
+      
+    
+  </picture>
+</div>
+    </div>
+  </div>
+</div><div class="container">
+    <div class="padder">
+<div class="categories clearfix bottom-space"><div class="category"><div class="category-label">Vasilije Rakcevic</div><div class="category-content">Let the deeds speak for you</div></div></div><ul class="projects clearfix"><li class="project">
+      <a href="https://github.com/Legged-robot">
+
+
+  
+  
+  
+  
+
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  <picture>
+    
+    <source media="(max-width: 46.25em)" srcset="/uploads/works/leg_teststand_hu6b7664f523075193f9f11d79c1c9dcfa_28975_848x443_fill_q75_box_smart1.jpg 848w, /uploads/works/leg_teststand_hu6b7664f523075193f9f11d79c1c9dcfa_28975_565x420_fill_q75_box_smart1.jpg 565w, /uploads/works/leg_teststand_hu6b7664f523075193f9f11d79c1c9dcfa_28975_360x318_fill_q75_box_left.jpg 360w" />
+    
+    
+      
+        
+        <img src="/uploads/works/leg_teststand_hu6b7664f523075193f9f11d79c1c9dcfa_28975_400x600_fill_q75_box_smart1.jpg" alt="Design of the Leg Teststand" />
+      
+    
+  </picture>
+<div class="project-hover">
+          <div class="project-caption"><div class="break-word project-title">Unique dynamic leg design Teststand</div><div class="break-word project-type">Quadrupped robot</div></div>
+        </div>
+      </a>
+    </li><li class="project short-col">
+      <a href="https://unsplash.com/photos/yeB9jDmHm6M">
+
+
+  
+  
+  
+  
+
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  <picture>
+    
+    <source media="(max-width: 46.25em)" srcset="/uploads/works/analytik_hua6c63e499ef81c8a367e15fccebebd4d_3067363_848x443_fill_q75_box_top.jpg 848w, /uploads/works/analytik_hua6c63e499ef81c8a367e15fccebebd4d_3067363_565x420_fill_q75_box_smart1.jpg 565w, /uploads/works/analytik_hua6c63e499ef81c8a367e15fccebebd4d_3067363_360x318_fill_q75_box_smart1.jpg 360w" />
+    
+    
+      
+        
+        <img src="/uploads/works/analytik_hua6c63e499ef81c8a367e15fccebebd4d_3067363_364x590_fill_q75_box_top.jpg" alt="The Analytic web design theme" />
+      
+    
+  </picture>
+<div class="project-hover">
+          <div class="project-caption"><div class="break-word project-title">Analytik</div><div class="break-word project-type">UI/UX</div></div>
+        </div>
+      </a>
+    </li><li class="project wide-col">
+      <a href="https://unsplash.com/photos/ir5lIkVFqC4">
+
+
+  
+  
+  
+  
+
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  <picture>
+    
+    <source media="(max-width: 46.25em)" srcset="/uploads/works/friends_hub92715a17fcd42f76ce0ca7a8db39dcc_1732259_848x443_fill_q75_box_top.jpg 848w, /uploads/works/friends_hub92715a17fcd42f76ce0ca7a8db39dcc_1732259_565x420_fill_q75_box_left.jpg 565w, /uploads/works/friends_hub92715a17fcd42f76ce0ca7a8db39dcc_1732259_360x318_fill_q75_box_center.jpg 360w" />
+    
+    
+      
+        
+        <img src="/uploads/works/friends_hub92715a17fcd42f76ce0ca7a8db39dcc_1732259_746x590_fill_q75_box_left.jpg" alt="The Friends theme" />
+      
+    
+  </picture>
+<div class="project-hover">
+          <div class="project-caption"><div class="break-word project-title">Friends</div><div class="break-word project-type">Product Development</div></div>
+        </div>
+      </a>
+    </li><li class="project wide-col">
+      <a href="https://unsplash.com/photos/JVSgcV8_vb4">
+
+
+  
+  
+  
+  
+
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  <picture>
+    
+    <source media="(max-width: 46.25em)" srcset="/uploads/works/food_hu906ade16cfdb91ac06339626852f7343_4066564_848x443_fill_q75_box_center.jpg 848w, /uploads/works/food_hu906ade16cfdb91ac06339626852f7343_4066564_565x420_fill_q75_box_center.jpg 565w, /uploads/works/food_hu906ade16cfdb91ac06339626852f7343_4066564_360x318_fill_q75_box_center.jpg 360w" />
+    
+    
+      
+        
+        <img src="/uploads/works/food_hu906ade16cfdb91ac06339626852f7343_4066564_746x590_fill_q75_box_center.jpg" alt="The Food website for recipes" />
+      
+    
+  </picture>
+<div class="project-hover">
+          <div class="project-caption"><div class="break-word project-title">Food</div><div class="break-word project-type">web design</div></div>
+        </div>
+      </a>
+    </li><li class="project short-col">
+      <a href="https://unsplash.com/photos/nJX74kn1yn4">
+
+
+  
+  
+  
+  
+
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  <picture>
+    
+    <source media="(max-width: 46.25em)" srcset="/uploads/works/statapp_hu3d03a01dcc18bc5be0e67db3d8d209a6_3060238_848x443_fill_q75_box_smart1.jpg 848w, /uploads/works/statapp_hu3d03a01dcc18bc5be0e67db3d8d209a6_3060238_565x420_fill_q75_box_center.jpg 565w, /uploads/works/statapp_hu3d03a01dcc18bc5be0e67db3d8d209a6_3060238_360x318_fill_q75_box_center.jpg 360w" />
+    
+    
+      
+        
+        <img src="/uploads/works/statapp_hu3d03a01dcc18bc5be0e67db3d8d209a6_3060238_364x590_fill_q75_box_left.jpg" alt="The application for statistic" />
+      
+    
+  </picture>
+<div class="project-hover">
+          <div class="project-caption"><div class="break-word project-title">StatAaapp</div><div class="break-word project-type">UI/UX</div></div>
+        </div>
+      </a>
+    </li><li class="project short-col">
+      <a href="https://unsplash.com/photos/nJX74kn1yn4">
+
+
+  
+  
+  
+  
+
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  <picture>
+    
+    <source media="(max-width: 46.25em)" srcset="/uploads/works/statapp_hu3d03a01dcc18bc5be0e67db3d8d209a6_3060238_848x443_fill_q75_box_smart1.jpg 848w, /uploads/works/statapp_hu3d03a01dcc18bc5be0e67db3d8d209a6_3060238_2000x420_fill_q75_box_center.jpg 2000w, /uploads/works/statapp_hu3d03a01dcc18bc5be0e67db3d8d209a6_3060238_360x318_fill_q75_box_center.jpg 360w" />
+    
+    
+      
+        
+        <img src="/uploads/works/statapp_hu3d03a01dcc18bc5be0e67db3d8d209a6_3060238_364x590_fill_q75_box_left.jpg" alt="The application for statistic" />
+      
+    
+  </picture>
+<div class="project-hover">
+          <div class="project-caption"><div class="break-word project-title">StatApp</div><div class="break-word project-type">UI/UX</div></div>
+        </div>
+      </a>
+    </li></ul></div>
+  </div>
+</div><script>
+  var addToLoad = function(callback){
+    if (window.addEventListener)
+      window.addEventListener('load', callback);
+    else if (window.attachEvent)
+      window.attachEvent('onload', callback);
+    else window.onload = callback;
+  };
+
+  var loadDeferredCss = function() {
+    var addStylesNode = document.getElementById("deferredCss");
+    var replacement = document.createElement("div");
+    replacement.innerHTML = addStylesNode.textContent;
+    document.body.appendChild(replacement)
+    addStylesNode.parentElement.removeChild(addStylesNode);
+  };
+  var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+  if (raf) raf(function() { window.setTimeout(loadDeferredCss, 0); });
+  else addToLoad(loadDeferredCss);
 </script>
 
-    </body>
+
+
+<script src="/js/app.min.50464bbdce312973f8675349e808595140640fd96eb2f501a449456f679c8e46.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-XXXXX-Y', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
 </html>

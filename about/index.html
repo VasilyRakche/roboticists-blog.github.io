@@ -1,355 +1,122 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Careful! You might get interested in robotics (sidefect)'><title>About</title>
-
-<link rel='canonical' href='https://vasilyrakche.github.io/about/'>
-
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='About'>
-<meta property='og:description' content='Careful! You might get interested in robotics (sidefect)'>
-<meta property='og:url' content='https://vasilyrakche.github.io/about/'>
-<meta property='og:site_name' content='Legged Robotics'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:published_time' content='2021-04-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-04-22T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content="Careful! You might get interested in robotics (sidefect)">
-    </head>
-    <body class="article-page keep-sidebar">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.body.dataset.scheme = 'dark';
-        } else {
-            document.body.dataset.scheme = 'light';
-        }
-    })();
-</script><div class="container main-container flex on-phone--column extended ">
-            <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header class="site-info">
-        
-        <h1 class="site-name"><a href="https://vasilyrakche.github.io">Legged Robotics</a></h1>
-        <h2 class="site-description">All that we know about robotics</h2>
-    </header>
-
-    <ol class="menu" id="main-menu">
-        
-        
-        
-
-        <li >
-            <a href='/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>Home</span>
-            </a>
-        </li>
-        
-        
-
-        <li  class='current' >
-            <a href='/about/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/archives/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/search/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-
-        
-            <li id="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <span>Dark Mode</span>
-            </li>
-        
-    </ol>
-</aside>
-
-            <main class="main full-width">
-    <article class="main-article">
-    <header class="article-header">
-
-    <div class="article-details">
-    
-
-    <h2 class="article-title">
-        <a href="/about/">About</a>
-    </h2>
-
-    
-    <h3 class="article-subtitle">
-        Careful! You might get interested in robotics (sidefect)
-    </h3>
-    <footer class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <time class="article-time--published">Apr 22, 2021</time>
-    </footer></div>
-</header>
-
-    <section class="article-content">
-    <h3 id="follow-development-of-legged-robotics-project-in-technical-university-berlin">Follow development of Legged robotics project in Technical University Berlin</h3>
-
-</section>
-
-
-    <footer class="article-footer">
-    
-
-    </footer>
-
-    
-</article>
-
-     
-        
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "vasilyrakche-github-io" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-
+<!doctype html>
+<html class=" no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About me - Vasilije Rakcevic</title>
+    <meta name="description" content="Important"><meta name="robots" content="index, follow"><link rel="shortcut icon" href="/favicon.ico">
 <style>
-    .disqus-container {
-        background-color: var(--card-background);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
-        padding: var(--card-padding);
-    }
+  @font-face{font-family:open sans;font-weight:600;font-style:normal;src:url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnZ2MAKAc2x4R1uOSeegc5U.eot);src:url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnZ2MAKAc2x4R1uOSeegc5U.eot?#iefix)format("embedded-opentype"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2)format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff)format("woff"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf)format("truetype"),url(//fonts.gstatic.com/l/font?kit=MTP_ySUJH_bn48VBG8sNSllIn5tFQcqMuf-jhyJP0ps&skey=a162967ffaa5aa08&v=v13#OpenSans)format("svg")}@font-face{font-family:open sans;font-weight:700;font-style:normal;src:url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot);src:url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot?#iefix)format("embedded-opentype"),local("Open Sans Bold"),local("Open-Sans-700"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2)format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff)format("woff"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf)format("truetype"),url(//fonts.gstatic.com/l/font?kit=k3k702ZOKiLJc3WVjuplzFlIn5tFQcqMuf-jhyJP0ps&skey=cd9e1a36bb25a3c3&v=v13#OpenSans)format("svg")}@font-face{font-family:open sans;font-weight:400;font-style:normal;src:url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot);src:url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot?#iefix)format("embedded-opentype"),local("Open Sans"),local("Open-Sans-regular"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2)format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff)format("woff"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf)format("truetype"),url(//fonts.gstatic.com/l/font?kit=cJZKeOuBrn4kERxqtaUH3Zbd9NUM7myrQQz30yPaGQ4&skey=62c1cbfccc78b4b2&v=v13#OpenSans)format("svg")}html,body,div,ul,li,h1,a,img,span,p{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{font-family:open sans,helvetica neue,Helvetica,Arial,sans-serif;font-size:62.5%;line-height:1.5;background:#fff;color:#2f2f2f;overflow-x:hidden;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;hyphens:auto;-webkit-hyphens:auto}a{color:#224afa;text-decoration:none}a:hover{color:#1538d1}ul{list-style:none}.padder{padding-left:2em;padding-right:2em}.accent-text{color:#224afa}.default-text{color:#2f2f2f}.bold-text{font-weight:700}.transparent{opacity:0}.break-word{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-break:break-word;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}.clearfix:after{content:"";display:block;clear:both}.nav-container,.header{background:#f1f1f1}.navbar{position:relative;z-index:5;height:7.1em;max-height:7.1em;padding-top:2em}.logo{float:left}.logo:before{display:inline-block;vertical-align:middle;content:'';height:100%;width:0}.logo img{vertical-align:middle}.links{visibility:hidden;opacity:0;position:absolute;top:100%;right:-2em;left:-2em;padding:1em 0;background:#f1f1f1;text-align:center;-webkit-box-shadow:0 5px 7px 0 rgba(1,1,1,.1);box-shadow:0 5px 7px rgba(1,1,1,.1);-webkit-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s}.links li{padding:.5em 0}.links a{color:#989898;font-size:1.8em;font-weight:600;-webkit-transition:all 500ms;-moz-transition:all 500ms;-ms-transition:all 500ms;-o-transition:all 500ms;transition:all 500ms}.links a:hover{color:#2f2f2f}.links a.active{color:#2f2f2f}.main-description{position:relative}.main-description h1{position:relative;font-size:4em;font-weight:700;line-height:1.15;padding-top:1.3em;padding-bottom:1.3em;z-index:1}.main-description img{position:absolute;bottom:0;display:block;max-width:100%;height:auto}.category{margin-top:3em}.category.line{margin:0}.category-label{font-size:1.6em;font-weight:700;text-transform:uppercase;margin-bottom:.472em}.category-content{color:#989898;font-size:1.8em;font-weight:600}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes slideInDown{from{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes slideInDown{from{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.slideInDown{-webkit-animation-duration:1.3s;animation-duration:1.3s;-webkit-animation-name:slideInDown;animation-name:slideInDown}@-webkit-keyframes fadeIn{0%{opacity:0}40%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:0}40%{opacity:0}100%{opacity:1}}.fadeIn{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-name:fadeIn;animation-name:fadeIn}@media only screen and (min-width:22.5625em){.main-description h1{font-size:4.6em;padding-top:1.923em;padding-bottom:1.923em}.category{margin-top:5em}.category-label{margin-bottom:.625em}}@media only screen and (min-width:33.5625em){.main-description h1{font-size:5.2em}}@media only screen and (min-width:46.3125em){.links{visibility:visible;opacity:1;position:static;float:right;width:auto;padding:0;height:100%;-webkit-box-shadow:none;box-shadow:none}.links:before{display:inline-block;vertical-align:middle;content:'';height:100%;width:0}.links li{display:inline-block;width:auto;margin-left:4em;vertical-align:middle}.burger-holder{display:none}.showBurger .burger-holder{display:block}.showBurger .links{visibility:hidden;opacity:0;position:absolute;float:none;height:auto;padding:1em 0;-webkit-box-shadow:0 5px 7px 0 rgba(1,1,1,.1);box-shadow:0 5px 7px rgba(1,1,1,.1)}.showBurger .links:before{display:none}.showBurger .links>li{display:list-item;margin:0}.main-description h1{font-size:5.4em;line-height:1.1428;padding-top:2.3148em;padding-bottom:2.3148em}.category{width:100%;float:left}.category>div{float:left}.category-label{width:30%;margin-bottom:0}.category-content{width:70%}.projects{margin-top:10em}}@media only screen and (min-width:58.5em){.main-description h1{padding-bottom:3.907em}.category{margin-top:7.5em}.category-label{width:42.47787%}.category-content{width:57.52213%}}@media only screen and (min-width:73.125em){.container{max-width:117em;margin:0 auto}.showBurger .links{left:-100%;right:-100%}}
 </style>
 
+
+<noscript id="deferredCss">
+  <link rel="stylesheet" href="/css/app.min.7198109ac32fcbdb993ce58a17e7eee03ca3bfdde049cc25b23db8e7bcbf2497.css">
+</noscript>
+
 <script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (DISQUS) {
-            DISQUS.reset({
-                reload: true
-            });
-        }
-    })
+  document.createElement("picture");
 </script>
+<script async src="https://cdn.jsdelivr.net/npm/picturefill@3.0.3/dist/picturefill.min.js" integrity="sha256-iT+n/otuaeKCgxnASny7bxKeqCDbaV1M7VdX1ZRQtqg=" crossorigin="anonymous"></script>
+</head>
+  <body><!--[if lte IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]--><noscript>For full functionality of this site it is necessary to enable JavaScript. Here are the <a href="//www.enable-javascript.com" target="_blank" rel="noreferrer nofollow">instructions how to enable JavaScript in your web browser</a>.</noscript><div class="main-container">
 
-    
-
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2020 - 
-        
-        2021 Legged Robotics
-    </section>
-    
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
-    </section>
-</footer>
-
-    
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
+<div class="nav-container">
+  <div class="container">
+    <div class="padder">
+      <div class="navbar animated slideInDown">
+        <div class="logo"><a href="https://example.com"><img src="/img/v_logo.jpg" alt="Vasilije Rakcevic logo"></a></div>
+        <div class="burger-holder">
+          <div class="burger">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+          </div>
         </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
+        <ul class="links">
+          <li><a href="/" class="active">Home</a></li><li><a href="/about" class="active">About</a></li></ul>
+      </div>
     </div>
+  </div>
+</div>
 
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer="true"
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer="true"
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
-            >
+<div class="header">
+  <div class="container">
+    <div class="padder">
+      <div class="main-description animated fadeIn"><h1 class="break-word"><pre>         Robot loading ... </pre></h1>
 
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
-                >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
 
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
+  
+  
+  
+  
 
-        document.head.appendChild(customFont);
-    }());
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  <picture>
+    
+    <source media="(max-width: 46.25em)" srcset="/uploads/Vasilije_Rakcevic_hu884cbc44f0bf044431b0061846b7c6e6_227882_848x443_fill_q75_bgffffff_box_center_3.jpg 848w, /uploads/Vasilije_Rakcevic_hu884cbc44f0bf044431b0061846b7c6e6_227882_700x420_fill_q75_bgffffff_box_center_3.jpg 700w, /uploads/Vasilije_Rakcevic_hu884cbc44f0bf044431b0061846b7c6e6_227882_490x318_fill_q75_bgffffff_box_center_3.jpg 490w" />
+    
+    
+      
+        
+        <img src="/uploads/Vasilije_Rakcevic_hu884cbc44f0bf044431b0061846b7c6e6_227882_200x300_fill_q75_bgffffff_box_smart1_3.jpg" alt="The designer&#39;s workspace table image" />
+      
+    
+  </picture>
+</div>
+    </div>
+  </div>
+</div><div class="container">
+    <div class="padder">
+<div class="categories clearfix bottom-space"><div class="category"><div class="category-label">About</div><div class="category-content"><p><b>Vasilije Rakcevic</b></p><br><p>Roboticist. Enthusiast about mechanics, software and electronics.</p><br><p>Studies:</p><br><p> - Bachelor in Mechatronics and Robotics at <b>Bauman Moscow State Technical University</b></p><p> - Master in Computer Science at EIT Digital Master School (Joint program between <b>TU Berlin and University of Trento</b>)</p></div></div><div class="category line"><div class="category-label">Projects</div><div class="category-content">I tried to present them on the <a class="accent-text bold-text" href="http://localhost:1313/">Home</a> page</div></div><div class="category line"><div class="category-label">Links</div><div class="category-content"><a class="accent-text bold-text" href="https://www.linkedin.com/in/vasilije-rakcevic">LinkedIn</a></div></div></div></div>
+  </div>
+</div><script>
+  var addToLoad = function(callback){
+    if (window.addEventListener)
+      window.addEventListener('load', callback);
+    else if (window.attachEvent)
+      window.attachEvent('onload', callback);
+    else window.onload = callback;
+  };
+
+  var loadDeferredCss = function() {
+    var addStylesNode = document.getElementById("deferredCss");
+    var replacement = document.createElement("div");
+    replacement.innerHTML = addStylesNode.textContent;
+    document.body.appendChild(replacement)
+    addStylesNode.parentElement.removeChild(addStylesNode);
+  };
+  var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+  if (raf) raf(function() { window.setTimeout(loadDeferredCss, 0); });
+  else addToLoad(loadDeferredCss);
 </script>
 
-    </body>
+
+
+<script src="/js/app.min.50464bbdce312973f8675349e808595140640fd96eb2f501a449456f679c8e46.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-XXXXX-Y', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
 </html>

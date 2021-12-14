@@ -1,114 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://vasilyrakche.github.io/categories/bldc/</loc>
-    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
+    <loc>https://example.com/contact/</loc>
+    <lastmod>2017-11-09T14:50:58+02:00</lastmod>
+  </url><url>
+    <loc>https://example.com/about/</loc>
+    <lastmod>2017-11-08T16:56:15+02:00</lastmod>
+  </url><url>
+    <loc>https://example.com/</loc>
+    <lastmod>2017-11-01T18:28:28+02:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/p/bldc/</loc>
-    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/categories/</loc>
-    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/</loc>
-    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/tags/motor/</loc>
-    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/post/</loc>
-    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/tags/</loc>
-    <lastmod>2021-04-26T08:40:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/about/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/p/all-about-mosfets/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/archives/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/tags/bldc-controller/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/p/creating-markdown-sites/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/tags/electronics/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/p/handling-driver/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/tags/markdown/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/p/bldc-components/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/page/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/categories/pcb/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/p/pcb-design-tips/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/categories/website/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/tags/website/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasilyrakche.github.io/search/</loc>
-  </url>
-  
 </urlset>
